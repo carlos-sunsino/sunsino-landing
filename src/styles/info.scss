@@ -1,0 +1,77 @@
+.info {
+	display: flex;
+	align-items: flex-start;
+
+	text-align: left;
+
+	color: var(--white, #ffffff);
+
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 150%; /* 24px */
+
+	// leading-trim: both;
+	// text-edge: cap;
+	&.service-phone {
+		&::before {
+			width: 16px;
+			height: 16px;
+			margin-top: 4px;
+			margin-right: 10px;
+
+			content: '';
+
+			background-image: url('/icon/service-phone.svg');
+		}
+	}
+	&.service-mail {
+		&::before {
+			width: 16px;
+			height: 16px;
+			margin-top: 4px;
+			margin-right: 10px;
+
+			content: '';
+
+			background-image: url('/icon/service-mail.svg');
+		}
+	}
+	&.service-time {
+		&::before {
+			width: 16px;
+			height: 16px;
+			margin-top: 4px;
+			margin-right: 10px;
+
+			content: '';
+
+			background-image: url('/icon/service-time.svg');
+		}
+	}
+	&.time {
+		&::before {
+			width: 16px;
+			height: 16px;
+			margin-top: 4px;
+			margin-right: 10px;
+
+			content: '';
+
+			background-image: url('/icon/time.svg');
+		}
+	}
+	&.location {
+		&::before {
+			width: 16px;
+			height: 18px;
+			margin-top: 4px;
+			margin-right: 10px;
+
+			content: '';
+
+			background-image: url('/icon/location.svg');
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ESNext",
+		"moduleResolution": "Node",
+		"lib": ["ESNext", "DOM"],
+		"strict": true,
+		"allowJs": true,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./*"],
+			"@/*": ["./src/*"]
+		},
+		"outDir": "./",
+		"jsx": "preserve",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"useDefineForClassFields": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
+	},
+	"vueCompilerOptions": {
+		"plugins": ["@volar/vue-language-plugin-pug"]
+	},
+	"include": [
+		"src/*.js",
+		"src/*.ts",
+		"src/*.d.ts",
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.js",
+		"src/**/*.vue"
+	],
+	"exclude": ["node_modules", "**/node_modules", "dist"]
+}

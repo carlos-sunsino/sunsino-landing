@@ -1,0 +1,24 @@
+.link {
+	width: 36px;
+	height: 36px;
+
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	&.fb {
+		background-image: url('/icon/fb.svg');
+	}
+	&.ig {
+		background-image: url('/icon/ig.svg');
+	}
+	&.linkedin {
+		background-image: url('/icon/linkedin.svg');
+	}
+	&.website {
+		background-image: url('/icon/website.svg');
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,18 @@
+$main: #6fffe5;
+$white: #ffffff;
+$black: #252d2b;
+$yellow: #fff64a;
+
+// RWD Breakpoint
+$breakpoint_phone: 640px;
+
+@mixin web() {
+    @media (min-width: $breakpoint_phone) {
+        @content;
+    }
+}
+@mixin phone() {
+    @media (max-width: $breakpoint_phone) {
+        @content;
+    }
+}
