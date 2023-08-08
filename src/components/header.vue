@@ -8,23 +8,39 @@
 		//- a(href="#speakers-pos") Speakers
 		a(href="#partnership-pos") Partnership
 		a(href="#contactus-pos") Contact Us
-	button.web(onclick="location.href='https://www.surveycake.com/s/nlVGO'") Join Now!
-	a.list.phone(v-if="!open" @click="open = !open")
-		img(src="/Header/Mobile/list.svg")
-	a.close.phone(v-if="open" @click="open = !open")
-		img(src="/Header/Mobile/close.svg")
+	.functions
+		.dropdown.web {{ t("locale") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
+			.dropdown-content
+				a(href="/zh-TW") 繁中
+				a(href="/zh-CN") 簡中
+				a(href="/en-US") 英文
+		button.web(onclick="location.href='https://www.surveycake.com/s/nlVGO'") Join Now!
+		a.list.phone(v-if="!open" @click="open = !open")
+			img(src="/Header/Mobile/list.svg")
+		a.close.phone(v-if="open" @click="open = !open")
+			img(src="/Header/Mobile/close.svg")
 .board(:class="open?'open':''")
 	a(href="#eventinfo-pos" @click="open = !open") Event Info
 	a(href="#agenda-pos" @click="open = !open") Agenda
 	//- a(href="#speakers-pos" @click="open = !open") Speakers
 	a(href="#partnership-pos" @click="open = !open") Partnership
 	a(href="#contactus-pos" @click="open = !open") Contact Us
+	.dropdown {{ t("locale") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
+		.dropdown-content
+			a(href="/zh-TW") 繁中
+			a(href="/zh-CN") 簡中
+			a(href="/en-US") 英文
 	button(onclick="location.href='https://www.surveycake.com/s/nlVGO'") Join Now!
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { reactive, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { CaretDownOutline } from '@vicons/ionicons5'
+import { Icon } from '@vicons/utils'
+
 const open = ref(false)
+const { t, locale } = useI18n()
 </script>
 
 <style lang="scss">
@@ -68,6 +84,11 @@ const open = ref(false)
 			height: 24px;
 			margin: 5px;
 		}
+	}
+	.functions {
+		display: flex;
+
+		gap: 20px;
 	}
 }
 
