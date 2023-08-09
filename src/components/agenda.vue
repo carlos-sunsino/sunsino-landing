@@ -1,6 +1,6 @@
 <template lang="pug">
 section#agenda
-	#agenda-pos
+	#timeline-pos
 	.title
 		span AGENDA
 	.aos(data-aos="zoom-in")

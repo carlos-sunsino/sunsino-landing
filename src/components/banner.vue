@@ -1,6 +1,6 @@
 <template lang="pug">
 section#banner
-	#eventinfo-pos
+	#purpose-pos
 	.aos(data-aos="fade-up")
 		.main-info
 			img.web(src="/banner-info_w.svg")

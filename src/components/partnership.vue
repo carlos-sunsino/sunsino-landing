@@ -1,6 +1,6 @@
 <template lang="pug">
 section#partnership
-	#partnership-pos
+	#reward-pos
 	.title
 		span Partnership
 	.partnership-group

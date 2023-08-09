@@ -13,6 +13,13 @@
 	color: #ffffff;
 
 	gap: 8px;
+	@include phone() {
+		width: 80vw;
+		padding: 20px 0;
+
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
 
 	&:hover,
 	&:active,
@@ -25,25 +32,30 @@
 
 .dropdown-content {
 	position: absolute;
-	bottom: 0;
 
 	display: none;
 	flex-direction: column;
 
-	width: 100%;
+	min-width: 100%;
 	padding: 10px 0;
 
-	transform: translateY(100%);
-
-	background-color: rgba(0, 0, 0, 0.6);
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.8);
 
 	gap: 10px;
+	@include web() {
+		bottom: 0;
 
+		transform: translateY(100%);
+	}
+	@include phone() {
+		top: 0;
+
+		transform: translateY(-100%);
+	}
 	a {
 		font-size: 1em;
 		&:hover {
-			color: #50ccb7 !important;
+			color: #f6d241 !important;
 		}
 	}
 }

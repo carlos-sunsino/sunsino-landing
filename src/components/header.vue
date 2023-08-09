@@ -1,36 +1,38 @@
 <template lang="pug">
 #header
-	a(href="https://startup101.biz")
-		img.logo(src="/logo.svg")
+	.logo
+		a(href="https://startup101.biz")
+			img(src="/logo.svg")
 	.links.web
-		a(href="#eventinfo-pos") Event Info
-		a(href="#agenda-pos") Agenda
-		//- a(href="#speakers-pos") Speakers
-		a(href="#partnership-pos") Partnership
-		a(href="#contactus-pos") Contact Us
+		a(href="#purpose-pos") {{ t('main.purpose') }}
+		a(href="#timeline-pos") {{ t('main.timeline')}}
+		a(href="#registration-pos") {{ t('main.registration')}}
+		a(href="#reward-pos") {{ t('main.reward')}}
+		a(href="#faq-pos") {{ t('main.faq')}}
 	.functions
-		.dropdown.web {{ t("locale") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
+		.dropdown.web {{ t("locale.current") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
 			.dropdown-content
-				a(href="/zh-TW") 繁中
-				a(href="/zh-CN") 簡中
-				a(href="/en-US") 英文
-		button.web(onclick="location.href='https://www.surveycake.com/s/nlVGO'") Join Now!
+				a(href="/zh-TW") {{ t("locale.zh") }}
+				a(href="/zh-CN") {{ t("locale.cn") }}
+				a(href="/en-US") {{ t("locale.en") }}
+		button.main.web(onclick="location.href='https://www.surveycake.com/s/nlVGO'") {{ t('header.apply_now') }}
 		a.list.phone(v-if="!open" @click="open = !open")
 			img(src="/Header/Mobile/list.svg")
 		a.close.phone(v-if="open" @click="open = !open")
 			img(src="/Header/Mobile/close.svg")
 .board(:class="open?'open':''")
-	a(href="#eventinfo-pos" @click="open = !open") Event Info
-	a(href="#agenda-pos" @click="open = !open") Agenda
-	//- a(href="#speakers-pos" @click="open = !open") Speakers
-	a(href="#partnership-pos" @click="open = !open") Partnership
-	a(href="#contactus-pos" @click="open = !open") Contact Us
-	.dropdown {{ t("locale") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
+	img(src="/banner-info_m.png")
+	button.main(onclick="location.href='https://www.surveycake.com/s/nlVGO'") {{ t('header.apply_now') }}
+	a(href="#purpose-pos" @click="open = !open") {{ t('main.purpose') }}
+	a(href="#timeline-pos" @click="open = !open") {{ t('main.timeline')}}
+	a(href="#registration-pos" @click="open = !open") {{ t('main.registration')}}
+	a(href="#reward-pos" @click="open = !open") {{ t('main.reward')}}
+	a(href="#faq-pos" @click="open = !open") {{ t('main.faq')}}
+	.dropdown {{ t("locale.current") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
 		.dropdown-content
-			a(href="/zh-TW") 繁中
-			a(href="/zh-CN") 簡中
-			a(href="/en-US") 英文
-	button(onclick="location.href='https://www.surveycake.com/s/nlVGO'") Join Now!
+			a(href="/zh-TW") {{ t("locale.zh") }}
+			a(href="/zh-CN") {{ t("locale.cn") }}
+			a(href="/en-US") {{ t("locale.en") }}
 </template>
 
 <script setup>
@@ -63,12 +65,21 @@ const { t, locale } = useI18n()
 		padding: 18px 30px;
 	}
 	.logo {
-		width: 126px;
-		height: 50px;
+		flex: 1;
+		justify-content: flex-start;
+
+		text-align: left;
+
+		img {
+			width: 55px;
+			height: 50px;
+		}
 	}
 	.links {
 		display: flex;
 		align-items: center;
+		flex: 5;
+		justify-content: center;
 
 		gap: 40px;
 	}
@@ -77,7 +88,7 @@ const { t, locale } = useI18n()
 
 		font-weight: 500;
 		&:hover {
-			color: rgba(255, 255, 255, 0.7);
+			color: rgba(#f6d241, 1);
 		}
 		img {
 			width: 24px;
@@ -87,16 +98,18 @@ const { t, locale } = useI18n()
 	}
 	.functions {
 		display: flex;
+		flex: 1;
+		justify-content: flex-end;
 
 		gap: 20px;
 	}
 }
 
-#eventinfo,
-#agenda,
-#speakers,
-#partnership,
-#contactus {
+#purpose,
+#timeline,
+#registration,
+#reward,
+#faq {
 	&-pos {
 		@include web() {
 			position: absolute;
@@ -124,8 +137,7 @@ const { t, locale } = useI18n()
 	transition: opacity 0.2s ease-in-out;
 
 	opacity: 0;
-	background-color: transparent;
-	background-image: url('/header-board.svg');
+	background-color: #000000;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 140% 120%;
@@ -135,6 +147,12 @@ const { t, locale } = useI18n()
 		z-index: -100;
 
 		display: none;
+	}
+
+	img {
+		width: 80vw;
+		margin-top: 40px;
+		margin-bottom: -20px;
 	}
 	&.open {
 		z-index: 10000;

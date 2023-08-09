@@ -1,20 +1,20 @@
 button {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
+	flex-shrink: 0;
 	justify-content: center;
 
 	min-width: 220px;
 	height: 45px;
-	padding: 25px 35px;
+	padding: 0 67px;
 
 	cursor: pointer;
 	transition: border-color 0.25s;
 
 	color: #ffffff;
-	border: 1px solid transparent;
-	border-radius: 8px;
+	border: 0 solid transparent;
+	border-radius: 100px;
 	background-color: transparent;
-	background-image: url('/btn.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -27,21 +27,20 @@ button {
 	&:focus {
 		outline: none;
 	}
+}
+button.main {
+	// background-image: url('/btn.svg');
+	border-radius: 100px;
+	background: var(--main-linear, linear-gradient(131deg, #1663f1 0%, #9747ff 50%, #fcc200 100%));
+
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 600;
+
 	&.l {
-		width: 100%;
-
-		background-image: url('/btn-l.svg');
-
-		@include web() {
-			font-size: 18px;
-		}
-		@include phone() {
-			font-size: 16px;
-		}
+		height: 50px;
 	}
 	&:hover {
-		border-color: transparent;
-
-		filter: brightness(1.05);
+		box-shadow: 0 0 10px 0 rgba(252, 194, 0, 0.5);
 	}
 }

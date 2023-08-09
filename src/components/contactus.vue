@@ -1,6 +1,6 @@
 <template lang="pug">
 section#contactus
-	#contactus-pos
+	#faq-pos
 	.title
 		span Contact Us
 	.contactus-group

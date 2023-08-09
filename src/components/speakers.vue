@@ -1,6 +1,6 @@
 <template lang="pug">
 section#speakers
-	#speakers-pos
+	#registration-pos
 	.title.long
 		span Speakers, Panelists & Moderators
 	.aos(data-aos="zoom-in")

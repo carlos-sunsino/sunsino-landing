@@ -1,11 +1,11 @@
 <template lang="pug">
 #home
-    Banner
-    Agenda
-    Highlight
+    //- Banner
+    //- Agenda
+    //- Highlight
     //- Speakers
-    Partnership
-    ContactUs
+    //- Partnership
+    //- ContactUs
     Footer
 </template>
 
