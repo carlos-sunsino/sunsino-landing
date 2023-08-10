@@ -1,6 +1,6 @@
 <template lang="pug">
 #home
-    //- Banner
+    Banner
     //- Agenda
     //- Highlight
     //- Speakers

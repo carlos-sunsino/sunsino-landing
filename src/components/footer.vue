@@ -3,14 +3,18 @@
 	.contact
 		img(src="/logo.svg")
 		.itemGroup
-			.item 主辦單位：上海商業儲蓄銀行
-			.item 協辦單位：上海銀行、上海商業銀行
-			.item 承辦單位：華陽創投、新創101
-			.item 聯絡我們：info@startup101.biz
+			.item {{ t('footer.sponsor') }}
+			.item {{ t('footer.co_organizer') }}
+			.item {{ t('footer.organizer') }}
+			.item {{ t('footer.contact') }}
 	.copyright © 2023 STARTUP101. All rights reserved.
 </template>
 
-<script setup></script>
+<script setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
 
 <style lang="scss" scoped>
 #footer {

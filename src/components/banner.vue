@@ -1,84 +1,129 @@
 <template lang="pug">
 section#banner
 	#purpose-pos
-	.aos(data-aos="fade-up")
-		.main-info
-			img.web(src="/banner-info_w.svg")
-			img.phone(src="/banner-info_m.svg")
-			button(onclick="location.href='https://www.surveycake.com/s/nlVGO'") Join Now!
+	.main-info
+		img(v-if="locale === 'zh-TW'" src="/banner-info_zh.png")
+		img(v-if="locale === 'zh-CN'" src="/banner-info_cn.png")
+		img(v-if="locale === 'en-US'" src="/banner-info_en.png")
+	.main-cover
+		img.web(src="/banner-cover_w.png")
+		img.phone(src="/banner-cover_m.png")
+	.main-link.phone
+		button.main(onclick="location.href='https://www.surveycake.com/s/nlVGO'") {{ t('header.apply_now') }}
 </template>
 
-<script setup></script>
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t, locale } = useI18n()
+</script>
 
 <style lang="scss" scoped>
 #banner {
 	position: relative;
 
+	display: flex;
+	flex-direction: column;
+
+	box-sizing: border-box;
 	height: 100vh;
+	max-height: 800px;
+	padding-top: 100px;
 
-	@include web() {
-		max-height: 800px;
-		margin-bottom: 120px;
+	&::before,
+	&::after {
+		position: absolute;
+		z-index: 10;
+		width: 922px;
+		height: 922px;
 
-		background-image: url('/banner-cover.svg');
-		background-repeat: repeat-x;
-		background-position: center bottom;
-		background-size: 100% cover;
-		&::before {
-			position: absolute;
-			top: 120px;
-			left: 50%;
+		content: '';
 
-			width: 4200px;
-			height: 200%;
-
-			content: '';
-			transform: translate(-49%, 0px);
-
-			background-image: url('/banner-image_w.svg');
-			background-repeat: no-repeat;
-			background-position: center top;
-			background-size: contain;
-		}
+		opacity: 0.2;
+		border-radius: 922px;
+		background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
 	}
-	@include phone() {
-		margin-bottom: -50px;
+	@include web() {
 		&::before {
-			position: absolute;
 			top: 0;
 			left: 50%;
+			transform: translateX(calc(-50% - 600px));
+		}
+		&::after {
+			top: -300px;
+			left: 50%;
+			transform: translateX(calc(-50% + 600px));
+		}
+	}
 
-			width: 100vw;
-			height: 100vh;
-			min-height: 750px;
-
-			content: '';
-			transform: translate(-50%, 0px);
-
-			background-image: url('/banner-image_m.svg');
-			background-repeat: no-repeat;
-			background-position: center top;
-			background-size: cover;
+	@include phone() {
+		&::before {
+			top: -40%;
+			left: -100%;
+		}
+		&::after {
+			right: -150%;
+			bottom: -40%;
+		}
+	}
+}
+.main-info,
+.main-cover {
+	img {
+		@include web() {
+			height: 100%;
+		}
+		@include phone() {
+			width: 100%;
 		}
 	}
 }
 .main-info {
-	position: absolute;
+	z-index: 1000;
 
 	@include web() {
-		top: 210px;
-		right: 50%;
+		height: 45%;
 
-		transform: translateX(320px);
+		transform: translateY(30px);
 	}
 	@include phone() {
-		top: 140px;
-		left: 0;
+		width: 100vw;
 
-		padding: 25px;
+		transform: translateY(60px);
 	}
+}
+.main-cover {
+	@include web() {
+		height: 70%;
+
+		transform: translateY(-180px);
+	}
+	@include phone() {
+		width: 100vw;
+	}
+}
+.main-link {
+	position: relative;
+	z-index: 10;
+
+	flex: 1;
+
+	padding-top: 20px;
+
 	button {
-		margin-top: 30px;
+		&::before {
+			position: absolute;
+			top: 20px;
+
+			width: 90%;
+			height: 90%;
+
+			content: '';
+
+			background-image: url('/public/banner-link.png');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+		}
 	}
 }
 </style>

@@ -14,6 +14,12 @@ export const zh = {
 	},
 	header: {
 		apply_now: '立即報名'
+	},
+	footer: {
+		sponsor: '主辦單位：上海商業儲蓄銀行',
+		co_organizer: '協辦單位：上海銀行、上海商業銀行',
+		organizer: '承辦單位：華陽創投、新創101',
+		contact: "聯絡我們：info{'@'}startup101.biz"
 	}
 }
 export const cn = {
@@ -32,6 +38,12 @@ export const cn = {
 	},
 	header: {
 		apply_now: '立即報名'
+	},
+	footer: {
+		sponsor: '主辦單位：上海商業儲蓄銀行',
+		co_organizer: '協辦單位：上海銀行、上海商業銀行',
+		organizer: '承辦單位：華陽創投、新創101',
+		contact: "聯絡我們：info{'@'}startup101.biz"
 	}
 }
 export const en = {
@@ -50,5 +62,11 @@ export const en = {
 	},
 	header: {
 		apply_now: 'Apply Now'
+	},
+	footer: {
+		sponsor: '主辦單位：上海商業儲蓄銀行',
+		co_organizer: '協辦單位：上海銀行、上海商業銀行',
+		organizer: '承辦單位：華陽創投、新創101',
+		contact: "聯絡我們：info{'@'}startup101.biz"
 	}
 }

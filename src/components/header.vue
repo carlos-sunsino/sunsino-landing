@@ -21,7 +21,9 @@
 		a.close.phone(v-if="open" @click="open = !open")
 			img(src="/Header/Mobile/close.svg")
 .board(:class="open?'open':''")
-	img(src="/banner-info_m.png")
+	img(v-if="locale === 'zh-TW'" src="/banner-info_zh.png")
+	img(v-if="locale === 'zh-CN'" src="/banner-info_cn.png")
+	img(v-if="locale === 'en-US'" src="/banner-info_en.png")
 	button.main(onclick="location.href='https://www.surveycake.com/s/nlVGO'") {{ t('header.apply_now') }}
 	a(href="#purpose-pos" @click="open = !open") {{ t('main.purpose') }}
 	a(href="#timeline-pos" @click="open = !open") {{ t('main.timeline')}}
@@ -131,6 +133,7 @@ const { t, locale } = useI18n()
 	flex-direction: column;
 	justify-content: center;
 
+	box-sizing: border-box;
 	width: 100vw;
 	height: 100vh;
 
