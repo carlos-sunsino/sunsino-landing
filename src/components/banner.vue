@@ -19,111 +19,119 @@ const { t, locale } = useI18n()
 
 <style lang="scss" scoped>
 #banner {
-	position: relative;
+    position: relative;
 
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-	box-sizing: border-box;
-	height: 100vh;
-	max-height: 800px;
-	padding-top: 100px;
+    box-sizing: border-box;
+    padding-top: 100px;
 
-	&::before,
-	&::after {
-		position: absolute;
-		z-index: 10;
-		width: 922px;
-		height: 922px;
+    @include web() {
+        height: 100vh;
+        max-height: 800px;
+        &::before {
+            top: 0;
+            left: 50%;
 
-		content: '';
+            transform: translateX(calc(-50% - 600px));
+        }
+        &::after {
+            top: -300px;
+            left: 50%;
 
-		opacity: 0.2;
-		border-radius: 922px;
-		background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
-	}
-	@include web() {
-		&::before {
-			top: 0;
-			left: 50%;
-			transform: translateX(calc(-50% - 600px));
-		}
-		&::after {
-			top: -300px;
-			left: 50%;
-			transform: translateX(calc(-50% + 600px));
-		}
-	}
+            transform: translateX(calc(-50% + 600px));
+        }
+    }
+    @include phone() {
+        height: 700px;
+        margin-bottom: 110px;
+        &::before {
+            top: -40%;
+            left: -100%;
+        }
+        &::after {
+            right: -150%;
+            bottom: -40%;
+        }
+    }
 
-	@include phone() {
-		&::before {
-			top: -40%;
-			left: -100%;
-		}
-		&::after {
-			right: -150%;
-			bottom: -40%;
-		}
-	}
+    &::before,
+    &::after {
+        position: absolute;
+        z-index: 10;
+
+        width: 922px;
+        height: 922px;
+
+        content: '';
+
+        opacity: .2;
+        border-radius: 922px;
+        background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
+    }
 }
 .main-info,
 .main-cover {
-	img {
-		@include web() {
-			height: 100%;
-		}
-		@include phone() {
-			width: 100%;
-		}
-	}
+    img {
+        @include web() {
+            height: 100%;
+        }
+        @include phone() {
+            width: 100%;
+        }
+    }
 }
 .main-info {
-	z-index: 1000;
+    z-index: 1000;
 
-	@include web() {
-		height: 45%;
+    @include web() {
+        height: 45%;
 
-		transform: translateY(30px);
-	}
-	@include phone() {
-		width: 100vw;
+        transform: translateY(30px);
+    }
+    @include phone() {
+        width: 100vw;
 
-		transform: translateY(60px);
-	}
+        transform: translateY(60px);
+    }
 }
 .main-cover {
-	@include web() {
-		height: 70%;
+    @include web() {
+        height: 70%;
 
-		transform: translateY(-180px);
-	}
-	@include phone() {
-		width: 100vw;
-	}
+        transform: translateY(-180px);
+    }
+    @include phone() {
+        width: 100vw;
+    }
 }
 .main-link {
-	position: relative;
-	z-index: 10;
+    position: relative;
+    z-index: 10;
 
-	flex: 1;
+    flex: 0;
 
-	padding-top: 20px;
+    height: 90px;
+    padding-top: 20px;
 
-	button {
-		&::before {
-			position: absolute;
-			top: 20px;
+    button {
+        &::before {
+            position: absolute;
+            z-index: -1;
+            top: 20px;
 
-			width: 90%;
-			height: 90%;
+            width: 90vw;
+            height: 100px;
 
-			content: '';
+            content: '';
 
-			background-image: url('/public/banner-link.png');
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: contain;
-		}
-	}
+            background-image: url('/banner-link.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+    }
 }
+
 </style>
