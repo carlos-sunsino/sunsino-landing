@@ -3,26 +3,9 @@ section#purpose
 	#purpose-pos
 	.title
 		span {{ t('main.purpose') }}
-	//- .aos(data-aos="zoom-in")
-	//- 	.purpose-group
-	//- 		.card
-	//- 			.num 1.
-	//- 			.topic Welcome and Introduction
-	//- 			.sub
-	//- 				.info.time 14:00 AM - 14:30 AM
-	//- 				.info.location ONLINE &#[br] OFFLINE (Taiwan Tech Arena)
-	//- 		.card
-	//- 			.num 2.
-	//- 			.topic Fireside Chat: How Corporate and Startups Should Collaborate, and Why?
-	//- 			.sub
-	//- 				.info.time 14:30 AM - 15:30 AM
-	//- 				.info.location ONLINE &#[br] OFFLINE (Taiwan Tech Arena)
-	//- 		.card
-	//- 			.num 3.
-	//- 			.topic Pitch: AI x B2B Solutions
-	//- 			.sub
-	//- 				.info.time 15:40 AM - 16:30 PM
-	//- 				.info.location ONLINE &#[br] OFFLINE (Taiwan Tech Arena)
+	.content {{ t('purpose.description') }}
+	//- video(preload controls)
+	//- 	source(src="/promotional.mp4" type="video/mp4")
 </template>
 
 <script setup>
@@ -39,46 +22,46 @@ const { t, locale } = useI18n()
     align-items: center;
     flex-direction: column;
 
+    @include web() {
+        padding: 100px 30px;
+        // background-image: url('/purpose-bg_w.png');
+
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        background-size: 2560px 740px;
+    }
+    @include phone() {
+        padding: 50px 30px;
+        // background-image: url('/purpose-bg_m.png');
+
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+    }
     gap: 50px;
-    &::before {
-        position: absolute;
-        top: 0;
+}
+.content {
+    text-align: left;
 
-        @include web() {
-            width: 1250px;
-            height: 200%;
+    color: var(--white, #ffffff);
+    /* Context */
 
-            content: '';
-            transform: translate(-70px, -50px);
-            // background-image: url('/purpose-bg_w.svg');
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 200%; /* 32px */
 
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: 100%;
-        }
-        @include phone() {
-            width: 100%;
-            height: 110%;
-
-            content: '';
-            transform: translate(0px, 70px);
-            // background-image: url('/purpose-bg_m.svg');
-
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: cover;
-        }
+    font-feature-settings: 'calt' off;
+    @include web() {
+        max-width: $content_w;
+    }
+    @include phone() {
+        max-width: 100vw;
     }
 }
-.purpose-group {
-    display: flex;
-
-    gap: 15px;
-    @include phone() {
-        flex-direction: column;
-
-        padding: 17px;
-    }
+video {
+    width: 100%;
+    max-width: 1050px;
 }
 
 </style>

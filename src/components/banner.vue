@@ -30,6 +30,7 @@ const { t, locale } = useI18n()
     @include web() {
         height: 100vh;
         max-height: 800px;
+        margin-bottom: -80px;
         &::before {
             top: 0;
             left: 50%;
@@ -45,7 +46,7 @@ const { t, locale } = useI18n()
     }
     @include phone() {
         height: 700px;
-        margin-bottom: 110px;
+        margin-bottom: 70px;
         &::before {
             top: -40%;
             left: -100%;
