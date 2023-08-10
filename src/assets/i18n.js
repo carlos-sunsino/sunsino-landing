@@ -8,9 +8,12 @@ export const zh = {
 	main: {
 		purpose: '競賽目的',
 		timeline: '競賽時程',
-		registration: '報名須知',
+		competition: '賽制說明',
 		reward: '獎勵內容',
-		faq: 'FAQ'
+		registration: '申請方式',
+		promotion: '晉級名單',
+		faq: 'FAQ',
+		partnership: '合作夥伴'
 	},
 	header: {
 		apply_now: '立即報名'
@@ -32,9 +35,12 @@ export const cn = {
 	main: {
 		purpose: '競賽目的',
 		timeline: '競賽時程',
-		registration: '報名須知',
+		competition: '賽制說明',
 		reward: '獎勵內容',
-		faq: 'FAQ'
+		registration: '申請方式',
+		promotion: '晉級名單',
+		faq: 'FAQ',
+		partnership: '合作夥伴'
 	},
 	header: {
 		apply_now: '立即報名'
@@ -56,9 +62,12 @@ export const en = {
 	main: {
 		purpose: 'Purpose',
 		timeline: 'Timeline',
-		registration: 'Registration',
+		competition: 'Competition',
 		reward: 'Reward',
-		faq: 'FAQ'
+		registration: 'Registration',
+		promotion: 'Promotion',
+		faq: 'FAQ',
+		partnership: 'Partnership'
 	},
 	header: {
 		apply_now: 'Apply Now'

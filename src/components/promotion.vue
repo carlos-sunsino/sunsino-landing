@@ -1,11 +1,11 @@
 <template lang="pug">
-section#partnership
-	#partnership-pos
+section#promotion
+	#promotion-pos
 	.title
-		span {{ t('main.partnership') }}
-	//- .partnership-group
-	//- 	img.logo(src="/partnership-logo-sunsino.png")
-	//- 	img.logo(src="/partnership-logo-tta.svg")
+		span {{ t('main.promotion') }}
+	//- .promotion-group
+	//- 	img.logo(src="/promotion-logo-sunsino.png")
+	//- 	img.logo(src="/promotion-logo-tta.svg")
 </template>
 
 <script setup lang="ts">
@@ -15,7 +15,7 @@ const { t, locale } = useI18n()
 </script>
 
 <style lang="scss" scoped>
-#partnership {
+#promotion {
     position: relative;
 
     display: flex;
@@ -30,7 +30,7 @@ const { t, locale } = useI18n()
         margin-top: 100px;
     }
 }
-.partnership-group {
+.promotion-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

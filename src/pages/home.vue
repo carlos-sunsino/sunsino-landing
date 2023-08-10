@@ -1,24 +1,29 @@
 <template lang="pug">
 #home
     Banner
-    //- Agenda
-    //- Highlight
-    //- Speakers
+    Purpose
+    //- Timeline
+    //- Competition
+    //- Reward
+    //- Registration
+    //- Promotion
+    //- FAQ
     //- Partnership
-    //- ContactUs
     Footer
 </template>
 
 <script setup>
-import { ref, computed, onMounted, reactive } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Banner from '@/components/banner.vue'
-import Agenda from '@/components/agenda.vue'
-import Highlight from '@/components/highlight.vue'
-// import Speakers from '@/components/speakers.vue'
+import Purpose from '@/components/purpose.vue'
+import Timeline from '@/components/timeline.vue'
+import Competition from '@/components/competition.vue'
+import Reward from '@/components/reward.vue'
+import Registration from '@/components/registration.vue'
+import Promotion from '@/components/promotion.vue'
+import FAQ from '@/components/faq.vue'
 import Partnership from '@/components/partnership.vue'
-import ContactUs from '@/components/contactus.vue'
 import Footer from '@/components/footer.vue'
 
 const route = useRoute()
@@ -29,6 +34,7 @@ locale.value = route.meta.locale
 
 <style lang="scss" scoped>
 #home {
-	overflow: hidden scroll;
+    overflow: hidden scroll;
 }
+
 </style>

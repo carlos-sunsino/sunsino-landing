@@ -1,61 +1,61 @@
 .dropdown {
-	position: relative;
+    position: relative;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-	min-width: 80px;
-	padding: 10px 0;
+    min-width: 80px;
+    padding: 10px 0;
 
-	cursor: pointer;
+    cursor: pointer;
 
-	color: #ffffff;
+    color: #ffffff;
 
-	gap: 8px;
-	@include phone() {
-		width: 80vw;
-		padding: 20px 0;
+    gap: 8px;
+    @include phone() {
+        width: 80vw;
+        padding: 20px 0;
 
-		border-top: 1px solid rgba(255, 255, 255, 0.5);
-		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	}
+        border-top: 1px solid rgba(255, 255, 255, .5);
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
 
-	&:hover,
-	&:active,
-	&:focus {
-		.dropdown-content {
-			display: flex;
-		}
-	}
+    &:hover,
+    &:active,
+    &:focus {
+        .dropdown-content {
+            display: flex;
+        }
+    }
 }
 
 .dropdown-content {
-	position: absolute;
+    position: absolute;
 
-	display: none;
-	flex-direction: column;
+    display: none;
+    flex-direction: column;
 
-	min-width: 100%;
-	padding: 10px 0;
+    min-width: 100%;
+    padding: 10px 20px;
 
-	background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, .8);
 
-	gap: 10px;
-	@include web() {
-		bottom: 0;
+    gap: 10px;
+    @include web() {
+        bottom: 0;
 
-		transform: translateY(100%);
-	}
-	@include phone() {
-		top: 0;
+        transform: translateY(100%);
+    }
+    @include phone() {
+        top: 0;
 
-		transform: translateY(-100%);
-	}
-	a {
-		font-size: 1em;
-		&:hover {
-			color: #f6d241 !important;
-		}
-	}
+        transform: translateY(-100%);
+    }
+    a {
+        font-size: 1em;
+        &:hover {
+            color: #f6d241 !important;
+        }
+    }
 }
