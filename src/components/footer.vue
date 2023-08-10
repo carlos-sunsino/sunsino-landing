@@ -1,11 +1,13 @@
 <template lang="pug">
 #footer
-    .item © 2023 STARTUP101. All rights reserved.
-    .item
-        .link.fb(onclick="location.href='https://www.facebook.com/startup101.tw/'")
-        .link.ig(onclick="location.href='https://www.instagram.com/startup101___/'")
-        .link.linkedin(onclick="location.href='https://www.linkedin.com/company/startup101biz'")
-        .link.website(onclick="location.href='https://startup101.biz'")
+	.contact
+		img(src="/logo.svg")
+		.itemGroup
+			.item 主辦單位：上海商業儲蓄銀行
+			.item 協辦單位：上海銀行、上海商業銀行
+			.item 承辦單位：華陽創投、新創101
+			.item 聯絡我們：info@startup101.biz
+	.copyright © 2023 STARTUP101. All rights reserved.
 </template>
 
 <script setup></script>
@@ -13,33 +15,65 @@
 <style lang="scss" scoped>
 #footer {
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
 
-	box-sizing: border-box;
-	width: 100%;
 	margin-top: 130px;
 
 	@include web() {
 		padding: 40px 100px;
 	}
 	@include phone() {
+		padding: 50px 30px;
+	}
+	.contact {
+		display: flex;
 		align-items: center;
-		flex-direction: column-reverse;
+		justify-content: space-between;
 
-		margin-bottom: 40px;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 1280px;
 
-		gap: 30px;
+		gap: 80px;
+		@include phone() {
+			gap: 30px;
+		}
+	}
+
+	img {
+		width: 90px;
+		height: 80px;
+
+		@include phone() {
+			width: 55px;
+			height: 50px;
+		}
+	}
+}
+.itemGroup {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+
+	@include web() {
+		flex-direction: row;
+
+		gap: 20px;
+	}
+	@include phone() {
+		flex-direction: column;
+
+		gap: 10px;
 	}
 }
 .item {
 	display: flex;
 
-	padding: 0 60px;
-
 	text-align: center;
 	white-space: nowrap;
 
-	color: #ffffff;
+	color: #edf0f7;
 
 	font-family: Montserrat;
 	font-size: 16px;
@@ -47,6 +81,34 @@
 	font-style: normal;
 	line-height: 150%; /* 24px */
 
-	gap: 10px;
+	@include phone() {
+		font-size: 14px;
+	}
+}
+.copyright {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 30px;
+
+	white-space: nowrap;
+
+	color: #edf0f7;
+	border-top: 1px rgba(#ffffff, 0.8) solid;
+
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 150%; /* 24px */
+
+	@include phone() {
+		margin-top: 40px;
+		padding-top: 40px;
+
+		font-size: 14px;
+	}
 }
 </style>
