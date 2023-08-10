@@ -3,7 +3,7 @@
     Banner
     Purpose
     //- Timeline
-    //- Competition
+    Competition
     //- Reward
     //- Registration
     //- Promotion

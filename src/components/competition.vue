@@ -3,6 +3,7 @@ section#competition
 	#competition-pos
 	.title
 		span {{ t('main.competition') }}
+	.content {{ t('competition.description') }}
 </template>
 
 <script setup>
@@ -13,19 +14,68 @@ const { t, locale } = useI18n()
 
 <style lang="scss" scoped>
 #competition {
-    position: relative;
+	position: relative;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
-    @include web() {
-        padding: 100px 30px;
-    }
-    @include phone() {
-        padding: 50px 30px;
-    }
-    gap: 50px;
+	@include web() {
+		padding: 100px 30px;
+	}
+	@include phone() {
+		padding: 50px 30px;
+	}
+	gap: 50px;
+	@include web() {
+		&::before,
+		&::after {
+			position: absolute;
+			z-index: 10;
+
+			content: '';
+		}
+		&::before {
+			top: 65%;
+			left: 55%;
+
+			width: 540px;
+			height: 490px;
+
+			transform: translateX(calc(-50% - 600px));
+
+			background-image: url('/public/cube_blue.png');
+		}
+		&::after {
+			top: -350px;
+			left: 40%;
+
+			width: 630px;
+			height: 550px;
+
+			transform: translateX(calc(-50% + 600px));
+
+			background-image: url('/public/cube_purple.png');
+		}
+	}
 }
+.content {
+	text-align: left;
+	white-space: pre-line;
 
+	color: var(--white, #ffffff);
+
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 200%; /* 32px */
+
+	font-feature-settings: 'calt' off;
+	@include web() {
+		max-width: $content_w - 180px;
+	}
+	@include phone() {
+		max-width: 100vw;
+	}
+}
 </style>
