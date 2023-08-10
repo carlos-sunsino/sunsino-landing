@@ -3,9 +3,6 @@ section#reward
 	#reward-pos
 	.title
 		span {{ t('main.reward') }}
-	//- .reward-group
-	//- 	img.logo(src="/reward-logo-sunsino.png")
-	//- 	img.logo(src="/reward-logo-tta.svg")
 </template>
 
 <script setup lang="ts">
@@ -22,39 +19,13 @@ const { t, locale } = useI18n()
     align-items: center;
     flex-direction: column;
 
+    @include web() {
+        padding: 100px 30px;
+    }
+    @include phone() {
+        padding: 50px 30px;
+    }
     gap: 50px;
-    @include web() {
-        margin-top: 130px;
-    }
-    @include phone() {
-        margin-top: 100px;
-    }
-}
-.reward-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    width: 90vw;
-    max-width: 1000px;
-
-    @include web() {
-        gap: 50px;
-    }
-    @include phone() {
-        gap: 30px;
-    }
-}
-.logo {
-    width: auto;
-
-    filter: contrast(0) brightness(2);
-    @include web() {
-        height: 50px;
-    }
-    @include phone() {
-        height: 30px;
-    }
 }
 
 </style>
