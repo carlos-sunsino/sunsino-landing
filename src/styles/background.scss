@@ -1,5 +1,6 @@
 .bg-img {
 	position: absolute;
+	z-index: 100;
 
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -14,5 +15,28 @@
 		height: 64px;
 
 		background-image: url('/star-02.png');
+	}
+	&.ticket-05 {
+		width: 35px;
+		height: 94px;
+
+		background-image: url('/ticket-05.png');
+	}
+	&.ticket-06 {
+		width: 35px;
+		height: 94px;
+
+		background-image: url('/ticket-06.png');
+	}
+	&.ticket-07 {
+		width: 35px;
+		height: 94px;
+
+		background-image: url('/ticket-07.png');
+	}
+
+	&.m {
+		width: 26px;
+		height: 70px;
 	}
 }

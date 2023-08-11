@@ -1,6 +1,12 @@
 <template lang="pug">
 section#banner
 	#purpose-pos
+	.bg-img.ticket-05.l01
+	.bg-img.ticket-06.l02
+	.bg-img.ticket-07.l03
+	.bg-img.ticket-07.r01
+	.bg-img.ticket-06.m.r02
+	.bg-img.ticket-05.r03
 	.main-info
 		img(v-if="locale === 'zh-TW'" src="/banner-info_zh.png")
 		img(v-if="locale === 'zh-CN'" src="/banner-info_cn.png")
@@ -39,7 +45,7 @@ const { t, locale } = useI18n()
 			border-radius: 922px;
 		}
 		&::before {
-			top: 0;
+			top: 100px;
 			left: 50%;
 
 			transform: translateX(calc(-50% - 600px));
@@ -81,6 +87,44 @@ const { t, locale } = useI18n()
 
 		opacity: 0.3;
 		background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
+	}
+	.bg-img {
+		&.l01 {
+			top: 170px;
+			left: 50%;
+
+			transform: translateX(calc(-50% + -550px));
+		}
+		&.l02 {
+			top: 280px;
+			left: 50%;
+
+			transform: translateX(calc(-50% + -400px));
+		}
+		&.l03 {
+			top: 430px;
+			left: 50%;
+
+			transform: translateX(calc(-50% + -480px));
+		}
+		&.r01 {
+			top: 180px;
+			left: 50%;
+
+			transform: translateX(calc(-50% + 500px));
+		}
+		&.r02 {
+			top: 340px;
+			left: 50%;
+
+			transform: translateX(calc(-50% + 400px));
+		}
+		&.r03 {
+			top: 420px;
+			left: 50%;
+
+			transform: translateX(calc(-50% + 480px));
+		}
 	}
 }
 .main-info,
