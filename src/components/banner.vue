@@ -79,7 +79,7 @@ const { t, locale } = useI18n()
 
 		content: '';
 
-		opacity: 0.2;
+		opacity: 0.3;
 		background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
 	}
 }

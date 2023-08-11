@@ -2,7 +2,7 @@
 #home
     Banner
     Purpose
-    //- Timeline
+    Timeline
     Competition
     //- Reward
     //- Registration
@@ -34,7 +34,6 @@ locale.value = route.meta.locale
 
 <style lang="scss" scoped>
 #home {
-    overflow: hidden scroll;
+	overflow: hidden scroll;
 }
-
 </style>
