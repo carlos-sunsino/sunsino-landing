@@ -6,7 +6,7 @@
     Competition
     Reward
     Registration
-    //- Promotion
+    Promotion
     FAQ
     Partnership
     Footer

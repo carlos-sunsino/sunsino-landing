@@ -38,6 +38,12 @@ export const zh = {
 		notice: '申請應備文件',
 		list: '提案簡報\n參賽同意書'
 	},
+	promotion: {
+		stage1: '書審',
+		stage2: '複審',
+		stage3: '決賽',
+		empty: '即將公佈 ...'
+	},
 	header: {
 		apply_now: '立即報名'
 	},
@@ -88,6 +94,12 @@ export const cn = {
 		notice: '申請應備文件',
 		list: '提案簡報\n參賽同意書'
 	},
+	promotion: {
+		stage1: '書審',
+		stage2: '複審',
+		stage3: '決賽',
+		empty: '即將公佈 ...'
+	},
 	header: {
 		apply_now: '立即報名'
 	},
@@ -137,6 +149,12 @@ export const en = {
 		download: '下載資料',
 		notice: '申請應備文件',
 		list: '提案簡報\n參賽同意書'
+	},
+	promotion: {
+		stage1: '書審',
+		stage2: '複審',
+		stage3: '決賽',
+		empty: 'Coming soon ...'
 	},
 	header: {
 		apply_now: 'Apply Now'
