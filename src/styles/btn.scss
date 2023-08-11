@@ -44,3 +44,37 @@ button.main {
 		box-shadow: 0 0 10px 0 rgba(252, 194, 0, 0.5);
 	}
 }
+button.secindary {
+	// background-image: url('/btn.svg');
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	justify-content: center;
+
+	height: 45px;
+	padding: 0 67px;
+
+	border: 1px solid transparent;
+	border-radius: 100px;
+	background-image: linear-gradient(to right, #16282c, #16282c),
+		linear-gradient(131deg, #1663f1 0%, #9747ff 50%, #fcc200 100%);
+	background-clip: padding-box, border-box;
+	background-origin: padding-box, border-box;
+
+	gap: 8px;
+
+	&::before {
+		width: 24px;
+		height: 24px;
+
+		content: '';
+
+		background-image: url('/ic/download.svg');
+	}
+	&.l {
+		height: 50px;
+	}
+	&:hover {
+		box-shadow: 0 0 10px 0 rgba(252, 194, 0, 0.5);
+	}
+}

@@ -43,6 +43,7 @@ const { t, locale } = useI18n()
 }
 .content {
 	text-align: left;
+	white-space: pre-line;
 
 	color: var(--white, #ffffff);
 	/* Context */

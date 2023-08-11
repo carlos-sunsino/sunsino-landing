@@ -5,7 +5,7 @@
     Timeline
     Competition
     //- Reward
-    //- Registration
+    Registration
     //- Promotion
     //- FAQ
     //- Partnership
