@@ -154,7 +154,7 @@ const faqlist = reactive({
 	flex-direction: column;
 
 	@include web() {
-		padding: 100px 30px;
+		padding: 80px 30px;
 
 		gap: 50px;
 	}

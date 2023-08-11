@@ -1,6 +1,5 @@
 <template lang="pug">
 section#registration
-	#registration-pos
 	.title
 		span {{ t('main.registration') }}
 	.content {{ t('registration.description') }}
@@ -25,7 +24,7 @@ const { t, locale } = useI18n()
 	flex-direction: column;
 
 	@include web() {
-		padding: 100px 30px;
+		padding: 80px 30px;
 	}
 	@include phone() {
 		padding: 50px 30px;

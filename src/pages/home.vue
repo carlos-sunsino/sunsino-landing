@@ -4,7 +4,7 @@
     Purpose
     Timeline
     Competition
-    //- Reward
+    Reward
     Registration
     //- Promotion
     FAQ

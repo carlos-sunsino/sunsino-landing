@@ -21,7 +21,7 @@ const { t, locale } = useI18n()
 	flex-direction: column;
 
 	@include web() {
-		padding: 100px 30px;
+		padding: 80px 30px;
 	}
 	@include phone() {
 		padding: 50px 30px;
@@ -36,7 +36,7 @@ const { t, locale } = useI18n()
 			content: '';
 		}
 		&::before {
-			top: 400px;
+			top: 270px;
 			left: 50%;
 
 			width: 540px;
