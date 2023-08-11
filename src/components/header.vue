@@ -115,7 +115,7 @@ const { t, locale } = useI18n()
 	&-pos {
 		@include web() {
 			position: absolute;
-			top: -200px;
+			top: -100px;
 		}
 		@include phone() {
 			position: absolute;

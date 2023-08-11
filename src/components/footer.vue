@@ -60,6 +60,7 @@ const { t } = useI18n()
 .itemGroup {
 	display: flex;
 	flex: 1;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 	@include web() {
@@ -88,6 +89,9 @@ const { t } = useI18n()
 	line-height: 150%; /* 24px */
 
 	@include phone() {
+		text-align: left;
+		white-space: pre-line;
+
 		font-size: 14px;
 	}
 }
