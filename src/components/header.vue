@@ -119,12 +119,13 @@ const { t, locale } = useI18n()
 		}
 		@include phone() {
 			position: absolute;
-			top: -150px;
+			top: -100px;
 		}
 	}
 }
 .board {
 	position: fixed;
+	z-index: -1;
 	top: 0;
 	left: 0;
 

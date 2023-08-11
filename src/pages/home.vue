@@ -8,7 +8,7 @@
     Registration
     //- Promotion
     FAQ
-    //- Partnership
+    Partnership
     Footer
 </template>
 

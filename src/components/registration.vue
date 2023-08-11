@@ -4,7 +4,8 @@ section#registration
 		span {{ t('main.registration') }}
 	.content {{ t('registration.description') }}
 	.docs
-		button.secindary {{ t('registration.download') }}
+		a(href="/logo.svg" download="logo.svg")
+			button.secindary(disabled) {{ t('registration.download') }}
 		.notice #[span  {{ t('registration.notice') }}]
 			.list {{ t('registration.list') }}
 </template>

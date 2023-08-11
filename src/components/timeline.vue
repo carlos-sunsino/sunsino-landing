@@ -1,5 +1,6 @@
 <template lang="pug">
 section#timeline
+	#timeline-pos
 	.title
 		span {{ t('main.timeline') }}
 	.item

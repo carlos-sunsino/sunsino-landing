@@ -18,11 +18,13 @@ const { t } = useI18n()
 
 <style lang="scss" scoped>
 #footer {
+	z-index: 10;
+
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 
-	margin-top: 130px;
+	background-color: #000000;
 
 	@include web() {
 		padding: 40px 100px;
