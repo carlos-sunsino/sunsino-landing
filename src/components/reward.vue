@@ -13,19 +13,18 @@ const { t, locale } = useI18n()
 
 <style lang="scss" scoped>
 #reward {
-    position: relative;
+	position: relative;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
-    @include web() {
-        padding: 100px 30px;
-    }
-    @include phone() {
-        padding: 50px 30px;
-    }
-    gap: 50px;
+	@include web() {
+		padding: 100px 30px;
+	}
+	@include phone() {
+		padding: 50px 30px;
+	}
+	gap: 50px;
 }
-
 </style>

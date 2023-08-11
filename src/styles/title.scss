@@ -1,82 +1,82 @@
 .title {
-    display: flex;
-    overflow: visible;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	overflow: visible;
+	align-items: center;
+	justify-content: center;
 
-    @include phone() {
-        justify-content: space-around;
+	@include phone() {
+		justify-content: space-around;
 
-        padding: 0 15px;
-    }
-    gap: 20px;
-    span {
-        position: relative;
+		padding: 0 15px;
+	}
+	gap: 20px;
+	span {
+		position: relative;
 
-        text-align: center;
-        letter-spacing: 1.2px;
+		text-align: center;
+		letter-spacing: 1.2px;
 
-        color: #ffffff;
+		color: #ffffff;
 
-        font-family: Montserrat;
-        font-size: 30px;
-        font-weight: 700;
-        font-style: normal;
-        line-height: normal;
-        &::before {
-            position: absolute;
-            top: 5px;
-            left: 50%;
+		font-family: Montserrat;
+		font-size: 30px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: normal;
+		&::before {
+			position: absolute;
+			top: 5px;
+			left: 50%;
 
-            width: calc(100% + 150px);
-            height: 55px;
+			width: calc(100% + 150px);
+			height: 55px;
 
-            content: '';
-            transform: translateX(-50%);
+			content: '';
+			transform: translateX(-50%);
 
-            opacity: .4;
-            border-radius: 258px;
-            background: radial-gradient(
-            50% 50% at 50% 50%,
-            #ffffff 0%,
-            rgba(255, 255, 255, 0) 100%
-            );
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
-    &.long {
-        @include phone() {
-            span {
-                font-size: 23px;
-            }
-            &::before,
-            &::after {
-                min-width: 15px;
-                min-height: 62px;
-            }
-        }
-    }
-    &::before,
-    &::after {
-        min-width: 30px;
-        min-height: 55px;
+			opacity: 0.4;
+			border-radius: 258px;
+			background: radial-gradient(
+				50% 50% at 50% 50%,
+				#ffffff 0%,
+				rgba(255, 255, 255, 0) 100%
+			);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	&.long {
+		@include phone() {
+			span {
+				font-size: 23px;
+			}
+			&::before,
+			&::after {
+				min-width: 15px;
+				min-height: 62px;
+			}
+		}
+	}
+	&::before,
+	&::after {
+		min-width: 30px;
+		min-height: 55px;
 
-        content: '';
+		content: '';
 
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    &::before {
-        content: '';
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&::before {
+		content: '';
 
-        background-image: url('/title-l.png');
-        background-position: left center;
-    }
-    &::after {
-        content: '';
+		background-image: url('/title-l.png');
+		background-position: left center;
+	}
+	&::after {
+		content: '';
 
-        background-image: url('/title-r.png');
-        background-position: right center;
-    }
+		background-image: url('/title-r.png');
+		background-position: right center;
+	}
 }

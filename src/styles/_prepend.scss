@@ -10,12 +10,12 @@ $breakpoint_phone: 640px;
 $content_w: 700px;
 
 @mixin web() {
-    @media (min-width: $breakpoint_phone) {
-        @content;
-    }
+	@media (min-width: $breakpoint_phone) {
+		@content;
+	}
 }
 @mixin phone() {
-    @media (max-width: $breakpoint_phone) {
-        @content;
-    }
+	@media (max-width: $breakpoint_phone) {
+		@content;
+	}
 }

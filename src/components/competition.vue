@@ -44,7 +44,7 @@ const { t, locale } = useI18n()
 
 			transform: translateX(calc(-50% - 600px));
 
-			background-image: url('/public/cube_blue.png');
+			background-image: url('/cube_blue.png');
 		}
 		&::after {
 			top: -350px;
@@ -55,7 +55,7 @@ const { t, locale } = useI18n()
 
 			transform: translateX(calc(-50% + 600px));
 
-			background-image: url('/public/cube_purple.png');
+			background-image: url('/cube_purple.png');
 		}
 	}
 }
