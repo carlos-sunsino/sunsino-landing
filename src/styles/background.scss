@@ -1,0 +1,18 @@
+.bg-img {
+	position: absolute;
+
+	background-repeat: no-repeat;
+	background-size: contain;
+	&.star-01 {
+		width: 100px;
+		height: 72px;
+
+		background-image: url('/star-01.png');
+	}
+	&.star-02 {
+		width: 67px;
+		height: 64px;
+
+		background-image: url('/star-02.png');
+	}
+}

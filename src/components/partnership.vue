@@ -1,5 +1,6 @@
 <template lang="pug">
 section#partnership
+	.bg-img.star-02.web
 	.title
 		span {{ t('main.partnership') }}
 	.list
@@ -63,6 +64,13 @@ const { t, locale } = useI18n()
 			border-radius: 485px;
 			background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
 		}
+	}
+
+	.bg-img.star-02 {
+		top: 50px;
+		left: 50%;
+
+		transform: translateX(calc(-50% + 450px));
 	}
 }
 .list {

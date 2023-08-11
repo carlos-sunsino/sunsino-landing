@@ -1,6 +1,8 @@
 <template lang="pug">
 section#timeline
 	#timeline-pos
+	.bg-img.star-01.web
+	.bg-img.star-02.web
 	.title
 		span {{ t('main.timeline') }}
 	.item
@@ -90,6 +92,18 @@ const { t, locale } = useI18n()
 
 		opacity: 0.3;
 		background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
+	}
+	.bg-img.star-01 {
+		top: 150px;
+		left: 50%;
+
+		transform: translateX(calc(-50% - 100px));
+	}
+	.bg-img.star-02 {
+		top: 800px;
+		left: 50%;
+
+		transform: translateX(calc(-50% - 500px));
 	}
 }
 </style>

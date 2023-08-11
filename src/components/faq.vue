@@ -1,6 +1,8 @@
 <template lang="pug">
 section#faq
 	#faq-pos
+	.bg-img.star-01.web
+	.bg-img.star-02.web
 	.title
 		span {{ t('main.faq') }}
 	.faqlist
@@ -196,6 +198,18 @@ const faqlist = reactive({
 
 			background-image: url('/cube_yellow.png');
 		}
+	}
+	.bg-img.star-01 {
+		top: -50px;
+		left: 50%;
+
+		transform: translateX(calc(-50% + 300px));
+	}
+	.bg-img.star-02 {
+		top: 250px;
+		left: 50%;
+
+		transform: translateX(calc(-50% - 550px));
 	}
 }
 .faqlist {

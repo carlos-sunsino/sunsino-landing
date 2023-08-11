@@ -1,5 +1,7 @@
 <template lang="pug">
 section#registration
+	.bg-img.star-01.web
+	.bg-img.star-02.web
 	.title
 		span {{ t('main.registration') }}
 	.content {{ t('registration.description') }}
@@ -48,6 +50,18 @@ const { t, locale } = useI18n()
 			border-radius: 922px;
 			background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
 		}
+	}
+	.bg-img.star-01 {
+		top: 100px;
+		left: 50%;
+
+		transform: translateX(calc(-50% - 550px));
+	}
+	.bg-img.star-02 {
+		top: 650px;
+		left: 50%;
+
+		transform: translateX(calc(-50% + 600px));
 	}
 }
 .content {
