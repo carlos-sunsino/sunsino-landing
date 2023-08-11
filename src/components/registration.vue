@@ -10,7 +10,7 @@ section#registration
 			.list {{ t('registration.list') }}
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
@@ -34,14 +34,15 @@ const { t, locale } = useI18n()
 	@include web() {
 		&::after {
 			position: absolute;
-			z-index: -1;
+			z-index: 10;
 			top: 300px;
-			right: -50px;
+			right: 50%;
 
 			width: 922px;
 			height: 922px;
 
 			content: '';
+			transform: translateX(calc(50% + 500px));
 
 			opacity: 0.3;
 			border-radius: 922px;

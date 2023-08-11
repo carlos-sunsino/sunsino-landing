@@ -11,7 +11,7 @@ section#timeline
 		img.phone(v-if="locale === 'en-US'" src="/timeline_en_m.png")
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()

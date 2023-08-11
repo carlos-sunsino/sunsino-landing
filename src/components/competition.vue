@@ -36,24 +36,24 @@ const { t, locale } = useI18n()
 			content: '';
 		}
 		&::before {
-			top: 65%;
-			left: 55%;
+			top: 400px;
+			left: 50%;
 
 			width: 540px;
 			height: 490px;
 
-			transform: translateX(calc(-50% - 600px));
+			transform: translateX(calc(-50% - 550px));
 
 			background-image: url('/cube_blue.png');
 		}
 		&::after {
 			top: -350px;
-			left: 40%;
+			left: 50%;
 
 			width: 630px;
 			height: 550px;
 
-			transform: translateX(calc(-50% + 600px));
+			transform: translateX(calc(-50% + 430px));
 
 			background-image: url('/cube_purple.png');
 		}

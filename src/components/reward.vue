@@ -5,7 +5,7 @@ section#reward
 		span {{ t('main.reward') }}
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()

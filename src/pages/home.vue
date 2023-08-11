@@ -7,7 +7,7 @@
     //- Reward
     Registration
     //- Promotion
-    //- FAQ
+    FAQ
     //- Partnership
     Footer
 </template>
