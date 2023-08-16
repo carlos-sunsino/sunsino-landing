@@ -1,6 +1,6 @@
 <template lang="pug">
 #header
-	.logo
+	.logo(v-if="!open")
 		a(href="https://startup101.biz")
 			img(src="/logo.svg")
 	.links.web
@@ -10,7 +10,7 @@
 		a(href="#reward-pos") {{ t('main.reward')}}
 		a(href="#faq-pos") {{ t('main.faq')}}
 	.functions
-		.dropdown.web {{ t("locale.current") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
+		.dropdown(v-if="!open" @click="lang = !lang" :class="lang?'open':''") {{ t("locale.current") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
 			.dropdown-content
 				a(href="/zh-TW") {{ t("locale.zh") }}
 				a(href="/zh-CN") {{ t("locale.cn") }}
@@ -30,11 +30,6 @@
 	a(href="#competition-pos" @click="open = !open") {{ t('main.competition')}}
 	a(href="#reward-pos" @click="open = !open") {{ t('main.reward')}}
 	a(href="#faq-pos" @click="open = !open") {{ t('main.faq')}}
-	.dropdown {{ t("locale.current") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
-		.dropdown-content
-			a(href="/zh-TW") {{ t("locale.zh") }}
-			a(href="/zh-CN") {{ t("locale.cn") }}
-			a(href="/en-US") {{ t("locale.en") }}
 </template>
 
 <script setup>
@@ -44,6 +39,7 @@ import { CaretDownOutline } from '@vicons/ionicons5'
 import { Icon } from '@vicons/utils'
 
 const open = ref(false)
+const lang = ref(false)
 const { t, locale } = useI18n()
 </script>
 
@@ -86,8 +82,12 @@ const { t, locale } = useI18n()
 		gap: 40px;
 	}
 	a {
+		padding-top: 13px;
+		padding-bottom: 13px;
+
 		color: #ffffffe7;
 
+		font-size: 16px;
 		font-weight: 500;
 		&:hover {
 			color: rgba(#f6d241, 1);
@@ -95,7 +95,6 @@ const { t, locale } = useI18n()
 		img {
 			width: 24px;
 			height: 24px;
-			margin: 5px;
 		}
 	}
 	.functions {
@@ -155,8 +154,6 @@ const { t, locale } = useI18n()
 
 	img {
 		width: 80vw;
-		margin-top: 40px;
-		margin-bottom: -20px;
 	}
 	&.open {
 		z-index: 10000;

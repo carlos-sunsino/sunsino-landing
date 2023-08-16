@@ -160,6 +160,8 @@ const { t, locale } = useI18n()
 	}
 	@include phone() {
 		width: 100vw;
+
+		transform: translateY(-40px);
 	}
 }
 .main-link {
@@ -169,13 +171,13 @@ const { t, locale } = useI18n()
 	flex: 0;
 
 	height: 90px;
-	padding-top: 20px;
+	transform: translateY(-20px);
 
 	button {
 		&::before {
 			position: absolute;
 			z-index: -1;
-			top: 20px;
+			top: 0;
 
 			width: 90vw;
 			height: 100px;

@@ -230,14 +230,13 @@ const faqlist = reactive({
 	flex-direction: column;
 	justify-content: center;
 
-	padding-top: 40px;
+	padding-top: 30px;
 
 	cursor: pointer;
 	white-space: pre-line;
 
 	color: #ffffff;
 
-	gap: 10px;
 	&::after {
 		width: 100%;
 		height: 1px;
@@ -289,6 +288,8 @@ const faqlist = reactive({
 
 		&.open {
 			display: flex;
+
+			margin-top: 10px;
 		}
 	}
 }

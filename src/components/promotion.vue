@@ -90,7 +90,7 @@ const teams = {
 	cursor: pointer;
 
 	color: #ffffff;
-	border-bottom: 1px #ffffff solid;
+	border-bottom: 1px rgba(#ffffff, 0.5) solid;
 
 	gap: 50px;
 	@include web() {
@@ -106,6 +106,8 @@ const teams = {
 
 		transition: all 0.2s;
 		letter-spacing: 0.96px;
+
+		outline: none;
 
 		font-size: 24px;
 		font-weight: 400;
