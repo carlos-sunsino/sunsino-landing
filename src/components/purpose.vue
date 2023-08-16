@@ -5,7 +5,7 @@ section#purpose
 		span {{ t('main.purpose') }}
 	.content {{ t('purpose.description') }}
 	.media
-		video(preload controls)
+		video(preload controls playsinline)
 			source(src="/promotional.mp4" type="video/mp4")
 </template>
 
