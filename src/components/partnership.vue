@@ -5,6 +5,8 @@ section#partnership
 		span {{ t('main.partnership') }}
 	.list
 		img(src="/partnership-logo-sunsino.png")
+		img(src="/partnership-logo-hkstp.png")
+		img(src="/partnership-logo-tta.svg")
 </template>
 
 <script setup>
@@ -77,22 +79,29 @@ const { t, locale } = useI18n()
 	display: flex;
 
 	@include web() {
+		align-items: flex-end;
+
 		gap: 30px;
 		img {
-			height: 80px;
+			// height: 80px;
+			width: 200px;
 
 			object-fit: contain;
 		}
 	}
 	@include phone() {
+		align-items: center;
 		flex-direction: column;
 
-		gap: 20px;
+		gap: 30px;
 		img {
 			width: 60vw;
 
 			object-fit: contain;
 		}
+	}
+	img {
+		filter: contrast(0) brightness(2);
 	}
 }
 </style>
