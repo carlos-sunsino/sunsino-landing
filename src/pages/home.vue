@@ -5,7 +5,7 @@
     Timeline
     Competition
     Reward
-    Registration
+    Application
     Promotion
     FAQ
     Partnership
@@ -20,7 +20,7 @@ import Purpose from '@/components/purpose.vue'
 import Timeline from '@/components/timeline.vue'
 import Competition from '@/components/competition.vue'
 import Reward from '@/components/reward.vue'
-import Registration from '@/components/registration.vue'
+import Application from '@/components/application.vue'
 import Promotion from '@/components/promotion.vue'
 import FAQ from '@/components/faq.vue'
 import Partnership from '@/components/partnership.vue'

@@ -15,7 +15,7 @@
 				a(href="/zh-TW") {{ t("locale.zh") }}
 				a(href="/zh-CN") {{ t("locale.cn") }}
 				a(href="/en-US") {{ t("locale.en") }}
-		button.main.web(onclick="location.href='https://www.surveycake.com/s/nlVGO'") {{ t('header.apply_now') }}
+		button.main.web(onclick="location.href='https://innofutureofbank.com/application/check'") {{ t('header.apply_now') }}
 		a.list.phone(v-if="!open" @click="open = !open")
 			img(src="/Header/Mobile/list.svg")
 		a.close.phone(v-if="open" @click="open = !open")
@@ -24,7 +24,7 @@
 	img(v-if="locale === 'zh-TW'" src="/banner-info_zh.png")
 	img(v-if="locale === 'zh-CN'" src="/banner-info_cn.png")
 	img(v-if="locale === 'en-US'" src="/banner-info_en.png")
-	button.main(onclick="location.href='https://www.surveycake.com/s/nlVGO'") {{ t('header.apply_now') }}
+	button.main(onclick="location.href='https://innofutureofbank.com/application/check'") {{ t('header.apply_now') }}
 	a(href="#purpose-pos" @click="open = !open") {{ t('main.purpose') }}
 	a(href="#timeline-pos" @click="open = !open") {{ t('main.timeline')}}
 	a(href="#competition-pos" @click="open = !open") {{ t('main.competition')}}
@@ -45,65 +45,70 @@ const { t, locale } = useI18n()
 
 <style lang="scss">
 #header {
-	position: fixed;
-	z-index: 100000;
+    position: fixed;
+    z-index: 100000;
 
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-	box-sizing: border-box;
-	width: 100vw;
-	padding: 10px 100px;
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 10px 100px;
 
-	background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, .4);
 
-	backdrop-filter: blur(25px);
-	@include phone() {
-		padding: 18px 30px;
-	}
-	.logo {
-		flex: 1;
-		justify-content: flex-start;
+    backdrop-filter: blur(25px);
+    @include phone() {
+        padding: 18px 30px;
+    }
+    .logo {
+        flex: 1;
+        justify-content: flex-start;
 
-		text-align: left;
+        text-align: left;
+        a {
+            display: flex;
 
-		img {
-			width: 55px;
-			height: 50px;
-		}
-	}
-	.links {
-		display: flex;
-		align-items: center;
-		flex: 5;
-		justify-content: center;
+            padding: 0;
+        }
+        img {
+            width: 55px;
+            height: 50px;
+        }
+    }
+    .links {
+        display: flex;
+        align-items: center;
+        flex: 5;
+        justify-content: center;
 
-		gap: 40px;
-	}
-	a {
-		padding-top: 13px;
-		padding-bottom: 13px;
+        gap: 40px;
+    }
+    a {
+        display: flex;
 
-		color: #ffffffe7;
+        padding: 13px 0;
 
-		font-size: 16px;
-		font-weight: 500;
-		&:hover {
-			color: rgba(#f6d241, 1);
-		}
-		img {
-			width: 24px;
-			height: 24px;
-		}
-	}
-	.functions {
-		display: flex;
-		flex: 1;
-		justify-content: flex-end;
+        color: #ffffffe7;
 
-		gap: 20px;
-	}
+        font-size: 16px;
+        font-weight: 500;
+        &:hover {
+            color: rgba(#f6d241, 1);
+        }
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .functions {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+
+        gap: 20px;
+    }
 }
 
 #purpose,
@@ -111,54 +116,55 @@ const { t, locale } = useI18n()
 #competition,
 #reward,
 #faq {
-	&-pos {
-		@include web() {
-			position: absolute;
-			top: -100px;
-		}
-		@include phone() {
-			position: absolute;
-			top: -100px;
-		}
-	}
+    &-pos {
+        @include web() {
+            position: absolute;
+            top: -100px;
+        }
+        @include phone() {
+            position: absolute;
+            top: -100px;
+        }
+    }
 }
 .board {
-	position: fixed;
-	z-index: -1;
-	top: 0;
-	left: 0;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
 
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
-	box-sizing: border-box;
-	width: 100vw;
-	height: 100vh;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
 
-	transition: opacity 0.2s ease-in-out;
+    transition: opacity .2s ease-in-out;
 
-	opacity: 0;
-	background-color: #000000;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 140% 120%;
+    opacity: 0;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140% 120%;
 
-	gap: 40px;
-	@include web() {
-		z-index: -100;
+    gap: 40px;
+    @include web() {
+        z-index: -100;
 
-		display: none;
-	}
+        display: none;
+    }
 
-	img {
-		width: 80vw;
-	}
-	&.open {
-		z-index: 10000;
+    img {
+        width: 80vw;
+    }
+    &.open {
+        z-index: 10000;
 
-		opacity: 1;
-	}
+        opacity: 1;
+    }
 }
+
 </style>

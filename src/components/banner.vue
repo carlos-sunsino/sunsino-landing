@@ -15,7 +15,7 @@ section#banner
 		img.web(src="/banner-cover_w.png")
 		img.phone(src="/banner-cover_m.png")
 	.main-link.phone
-		button.main(onclick="location.href='https://www.surveycake.com/s/nlVGO'") {{ t('header.apply_now') }}
+		button.main(onclick="location.href='https://innofutureofbank.com/application/check'") {{ t('header.apply_now') }}
 </template>
 
 <script setup>
@@ -171,6 +171,7 @@ const { t, locale } = useI18n()
 	flex: 0;
 
 	height: 90px;
+
 	transform: translateY(-20px);
 
 	button {

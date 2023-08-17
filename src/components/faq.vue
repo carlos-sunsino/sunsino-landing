@@ -21,33 +21,28 @@ const faqlist = reactive({
 	'zh-TW': [
 		{
 			isOpen: false,
-			question: 'Q：可以同時報名多地區嗎？',
-			answer: 'A：參賽新創企業至多得挑選兩地區參賽，一經選定後不得更換地區。'
-		},
-		{
-			isOpen: false,
 			question: 'Q：是否需繳交報名費用？',
 			answer: 'A： 本競賽無需報名費。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：如果報名或填寫申請文件遇到問題時，怎麼辦？',
-			answer: 'A：發信至info@startup101.biz提問，或是來電執行單位詢問（華陽創投Rayz+886-2-7718-6088 #240）。'
+			answer: 'A：發信至 info@startup101.biz 提問，或是來電執行單位詢問\n（華陽創投 Rayz +886-2-7718-6088 #240）'
 		},
 		{
 			isOpen: false,
 			question: 'Q：初賽及複賽結果是否會通知？',
-			answer: 'A：會由承辦單位以E-mail方式通知聯絡人，並請關注本網站公告。'
+			answer: 'A：會由承辦單位以 E-mail 方式通知聯絡人，並請關注本網站公告。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：有需要達成的義務嗎？',
-			answer: 'A：通過複賽者之企業須達成義務：入圍決賽之企業需於決賽Demo Day前往香港決賽場地進行現場Pitch，報到時將提供團隊500美元交通補助\n通過決賽者之冠軍企業須達成義務：配合主辦單位及協辦單位安排，至少參與1場合作意向會議。'
+			answer: 'A：通過複賽者之企業須達成義務：入圍決賽之企業需於決賽 Demo Day 前往香港決賽場地進行現場 Pitch，報到時將提供團隊500美元交通補助\n通過決賽者之冠軍企業須達成義務：配合主辦單位及協辦單位安排，至少參與1場合作意向會議。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：最後申請日是何時？',
-			answer: 'A：申請截止期間為 2023 年 09 月 14 日 17 點 00 分點選報名連結填寫，完成後系統將寄送【申請確認信】，唯最後補件日為9月15日 17點00分，故請儘早完成報名確保參賽資格。'
+			answer: 'A：申請截止期間為 2023 年 09 月 14 日 17 點 00 分點選報名連結填寫，完成後系統將寄送【申請確認信】，唯最後補件日為 09 月 15 日 17 點 00 分，故請儘早完成報名確保參賽資格。'
 		},
 		{
 			isOpen: false,
@@ -61,85 +56,75 @@ const faqlist = reactive({
 		}
 	],
 	'zh-CN': [
+		{ isOpen: false, question: 'Q：是否需要缴纳报名费用？', answer: 'A：本竞赛无需报名费。' },
 		{
 			isOpen: false,
-			question: 'Q：可以同时报名多地区吗？ ',
-			answer: 'A：参赛新创企业至多得挑选两地区参赛，一经选定后不得更换地区。 '
-		},
-		{ isOpen: false, question: 'Q：是否需缴交报名费用？ ', answer: 'A： 本竞赛无需报名费。 ' },
-		{
-			isOpen: false,
-			question: 'Q：如果报名或填写申请文件遇到问题时，怎么办？ ',
-			answer: 'A：发信至info@startup101.biz提问，或是来电执行单位询问（華陽創投Rayz 886-2-7718-6088 #240）。 '
+			question: 'Q：如果报名或填写申请文件时遇到问题，怎么办？',
+			answer: 'A：发信至 info@startup101.biz 提问，或来电执行单位询问\n（华阳创投 Rayz +886-2-7718-6088 #240）。'
 		},
 		{
 			isOpen: false,
-			question: 'Q：初赛及复赛结果是否会通知？ ',
-			answer: 'A：会由承办单位以E-mail方式通知联络人，并请关注本网站公告。 '
+			question: 'Q：初赛及复赛结果是否会通知？',
+			answer: 'A：会由承办单位以 E-mail 方式通知联络人，并请关注本网站公告。'
 		},
 		{
 			isOpen: false,
-			question: 'Q：有需要达成的义务吗？ ',
-			answer: 'A：通过复赛者之企业须达成义务：入围决赛之企业需于决赛Demo Day前往香港决赛场地进行现场Pitch，报到时将提供团队500美元交通补助\n通过决赛者之冠军企业须达成义务：配合主办单位及协办单位安排，至少参与1场合作意向会议。 '
+			question: 'Q：有需要达成的义务吗？',
+			answer: 'A：通过复赛的企业须达成义务：入围决赛的企业需在决赛 Demo Day 前往香港决赛场地进行现场 Pitch，报到时将提供团队500美元的交通补助\n通过决赛的冠军企业须达成义务：配合主办单位及协办单位安排，至少参与1场合作意向会议。'
 		},
 		{
 			isOpen: false,
-			question: 'Q：最后申请日是何时？ ',
-			answer: 'A：申请截止期间为2023 年09 月14 日17 点00 分点选报名连结填写，完成后系统将寄送【申请确认信】，唯最后补件日为9月15日17点00分，故请尽早完成报名确保参赛资格。 '
+			question: 'Q：最后申请日是何时？',
+			answer: 'A：申请截止期间为 2023 年 09 月 14 日 17 点 00 分，点击报名链接填写，完成后系统将寄送【申请确认信】，最后补件日为 09 月 15 日 17 点 00 分，故请尽早完成报名，以确保参赛资格。'
 		},
 		{
 			isOpen: false,
-			question: 'Q：参赛人员是否有人数及身分限制？ ',
-			answer: 'A：人数无限制，参赛人员须为公司员工；而报名系统中提列之参赛人员名单，皆须亲笔签署参赛同意书。 '
+			question: 'Q：参赛人员是否有人数及身份限制？',
+			answer: 'A：人数无限制，参赛人员须为公司员工；而报名系统中提列的参赛人员名单，皆须亲笔签署参赛同意书。'
 		},
 		{
 			isOpen: false,
-			question: 'Q：主办、协办、承办企业是否会签署保密同意书？ ',
-			answer: 'A：是的。根据本竞赛须知载明，主办单位、协办单位及承办单位均须签署【保密协议书】。 '
+			question: 'Q：主办、协办、承办企业是否会签署保密同意书？',
+			answer: 'A：是的。根据本竞赛须知载明，主办单位、协办单位及承办单位均须签署【保密协议书】。'
 		}
 	],
 	'en-US': [
 		{
 			isOpen: false,
-			question: 'Q: Can I register for multiple regions at the same time? ',
-			answer: 'A: Participating start-ups must choose at most two regions to participate in the competition, and once selected, they cannot change regions. '
-		},
-		{
-			isOpen: false,
-			question: 'Q: Is there a registration fee? ',
-			answer: 'A: There is no entry fee for this competition. '
+			question: 'Q: Is there a application fee?',
+			answer: 'A: There is no application fee for this competition.'
 		},
 		{
 			isOpen: false,
 			question:
-				'Q: What should I do if I encounter problems in registering or filling in application documents? ',
-			answer: 'A: Send a letter to info@startup101.biz to ask questions, or call the executive unit to inquire (Sunsino Rayz 886-2-7718-6088 #240). '
+				'Q: What should I do if I encounter any problems while registering or filling out the application forms?',
+			answer: 'A: You can send inquiries to  info@startup101.biz or call the organization office\n(Sunsino Rayz +886-2-7718-6088 #240).'
 		},
 		{
 			isOpen: false,
-			question: 'Q: Will the preliminary and semi-final results be notified? ',
-			answer: 'A: The organizer will notify the contact person by E-mail, and please pay attention to the announcement on this website. '
+			question: 'Q: Will the results of the preliminary and semi-final rounds be announced?',
+			answer: 'A: The organizer will notify the contact person by email, and you can also find the announcements on this website.'
 		},
 		{
 			isOpen: false,
-			question: 'Q: Are there any obligations that need to be fulfilled? ',
-			answer: 'A: Companies that pass the semi-finals must meet the obligations: companies that are shortlisted for the finals must go to the Hong Kong finals venue on the final Demo Day to conduct an on-site pitch, and will provide the team with a transportation subsidy of US$500\nThe champion company that passed the finals Obligations to be fulfilled: Cooperate with the organizer and co-organizers to participate in at least one cooperation intention meeting. '
+			question: 'Q: Are there any obligations that must be met?',
+			answer: 'A: For companies that pass the semifinals, the following obligations must be met:\n- Companies that make it to the final round must attend the on-site demo day at the final round venue in Hong Kong. A transportation subsidy of 500 USD per team will be provided upon registration.\n\nCompanies that win the finals must fulfill the following commitment:\n- The winning company must collaborate with the organizing and co-organizing entities and attend at least one collaboration meeting.'
 		},
 		{
 			isOpen: false,
-			question: 'Q: When is the last application date? ',
-			answer: 'A: The application deadline is 17:00, September 14, 2023. Click on the registration link to fill in. After completion, the system will send the [Application Confirmation Letter], but the last supplementary date is September 15, 17 00 points, so please complete the registration as soon as possible to ensure the eligibility. '
+			question: 'Q: When is the last date to apply?',
+			answer: 'A: The deadline for application is September 14, 2023 at 5:00 pm. After you complete the application through the provided link, the system will send a confirmation email. However, the last date for submitting additional documents is September 15, 2023 at 5:00 pm. It is therefore advisable to complete registration early to ensure eligibility.'
 		},
 		{
 			isOpen: false,
-			question: 'Q: Are there any restrictions on the number and identity of participants? ',
-			answer: 'A: There is no limit to the number of participants, and the participants must be employees of the company; and the list of participants listed in the registration system must sign the consent form for participation. '
+			question: 'Q: Is there a limit to the number and identity of participants?',
+			answer: 'A: There is no limit on participants, but those participating must be employees of the company. Everyone must hand-sign the list of participating individuals provided in the registration system.'
 		},
 		{
 			isOpen: false,
 			question:
-				'Q: Will the host, co-organizer, and contractor sign a confidentiality agreement? ',
-			answer: 'A: Yes. According to the competition instructions, the organizer, co-organizers and organizers must sign the [Confidentiality Agreement]. '
+				'Q: Do the organizing, co-organizing companies sign a confidentiality agreement?',
+			answer: 'A: Yes. According to the contest guidelines, the organizing entity, co-organizing entities must sign a confidentiality agreement.'
 		}
 	]
 })
@@ -147,150 +132,151 @@ const faqlist = reactive({
 
 <style lang="scss" scoped>
 #faq {
-	position: relative;
+    position: relative;
 
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-	@include web() {
-		padding: 80px 30px;
+    @include web() {
+        padding: 80px 30px;
 
-		gap: 50px;
-	}
-	@include phone() {
-		padding: 50px 30px;
+        gap: 50px;
+    }
+    @include phone() {
+        padding: 50px 30px;
 
-		gap: 20px;
-	}
-	@include web() {
-		&::before,
-		&::after {
-			position: absolute;
-			z-index: -1;
+        gap: 20px;
+    }
+    @include web() {
+        &::before,
+        &::after {
+            position: absolute;
+            z-index: -1;
 
-			content: '';
+            content: '';
 
-			background-repeat: no-repeat;
-			background-size: contain;
-		}
-		&::before {
-			top: 750px;
-			left: 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &::before {
+            top: 750px;
+            left: 50%;
 
-			width: 440px;
-			height: 313px;
+            width: 440px;
+            height: 313px;
 
-			transform: translateX(calc(-50% - 500px));
+            transform: translateX(calc(-50% - 500px));
 
-			background-image: url('/cube_purple.png');
-		}
-		&::after {
-			top: -150px;
-			left: 50%;
+            background-image: url('/cube_purple.png');
+        }
+        &::after {
+            top: -150px;
+            left: 50%;
 
-			width: 438px;
-			height: 385px;
+            width: 438px;
+            height: 385px;
 
-			transform: translateX(calc(-50% + 550px));
+            transform: translateX(calc(-50% + 550px));
 
-			background-image: url('/cube_yellow.png');
-		}
-	}
-	.bg-img.star-01 {
-		top: -50px;
-		left: 50%;
+            background-image: url('/cube_yellow.png');
+        }
+    }
+    .bg-img.star-01 {
+        top: -50px;
+        left: 50%;
 
-		transform: translateX(calc(-50% + 300px));
-	}
-	.bg-img.star-02 {
-		top: 250px;
-		left: 50%;
+        transform: translateX(calc(-50% + 300px));
+    }
+    .bg-img.star-02 {
+        top: 250px;
+        left: 50%;
 
-		transform: translateX(calc(-50% - 550px));
-	}
+        transform: translateX(calc(-50% - 550px));
+    }
 }
 .faqlist {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-	width: 100%;
-	padding: 30px 0;
+    width: 100%;
+    padding: 30px 0;
 
-	@include web() {
-		max-width: $content_w;
-	}
-	@include phone() {
-		max-width: 100vw;
-	}
+    @include web() {
+        max-width: $content_w;
+    }
+    @include phone() {
+        max-width: 100vw;
+    }
 }
 .item {
-	display: flex;
-	align-items: stretch;
-	flex-direction: column;
-	justify-content: center;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
 
-	padding-top: 30px;
+    padding-top: 30px;
 
-	cursor: pointer;
-	white-space: pre-line;
+    cursor: pointer;
+    white-space: pre-line;
 
-	color: #ffffff;
+    color: #ffffff;
 
-	&::after {
-		width: 100%;
-		height: 1px;
-		margin-top: 30px;
+    &::after {
+        width: 100%;
+        height: 1px;
+        margin-top: 30px;
 
-		content: '';
+        content: '';
 
-		background-image: linear-gradient(131deg, #1663f1 0%, #9747ff 50%, #fcc200 100%);
-	}
-	.question {
-		position: relative;
+        background-image: linear-gradient(131deg, #1663f1 0%, #9747ff 50%, #fcc200 100%);
+    }
+    .question {
+        position: relative;
 
-		display: flex;
-		justify-content: flex-start;
+        display: flex;
+        justify-content: flex-start;
 
-		padding: 0 30px;
+        padding: 0 30px;
 
-		text-align: left;
-		text-indent: -1.6em;
+        text-align: left;
+        text-indent: -1.6em;
 
-		&.open {
-			&::after {
-				background-image: url('/faq-close.svg');
-			}
-		}
-		&::after {
-			position: absolute;
-			top: 50%;
-			right: 0;
+        &.open {
+            &::after {
+                background-image: url('/faq-close.svg');
+            }
+        }
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: 0;
 
-			width: 20px;
-			height: 20px;
+            width: 20px;
+            height: 20px;
 
-			content: '';
-			transform: translateY(-50%);
+            content: '';
+            transform: translateY(-50%);
 
-			background-image: url('/faq-open.svg');
-		}
-	}
-	.answer {
-		display: none;
-		justify-content: flex-start;
+            background-image: url('/faq-open.svg');
+        }
+    }
+    .answer {
+        display: none;
+        justify-content: flex-start;
 
-		padding: 0 30px;
+        padding: 0 30px;
 
-		transition: all 0.5s;
-		text-align: left;
-		text-indent: -1.6em;
+        transition: all .5s;
+        text-align: left;
+        text-indent: -1.6em;
 
-		&.open {
-			display: flex;
+        &.open {
+            display: flex;
 
-			margin-top: 10px;
-		}
-	}
+            margin-top: 10px;
+        }
+    }
 }
+
 </style>

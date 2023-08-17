@@ -6,12 +6,12 @@ section#timeline
 	.title
 		span {{ t('main.timeline') }}
 	.item
-		img.web(v-if="locale === 'zh-TW'" src="/timeline_zh_w.png")
-		img.phone(v-if="locale === 'zh-TW'" src="/timeline_zh_m.png")
-		img.web(v-if="locale === 'zh-CN'" src="/timeline_cn_w.png")
-		img.phone(v-if="locale === 'zh-CN'" src="/timeline_cn_m.png")
-		img.web(v-if="locale === 'en-US'" src="/timeline_en_w.png")
-		img.phone(v-if="locale === 'en-US'" src="/timeline_en_m.png")
+		img.web(v-if="locale === 'zh-TW'" src="/Timeline-TC-desktop.png")
+		img.phone(v-if="locale === 'zh-TW'" src="/Timeline-TC-mobile.png")
+		img.web(v-if="locale === 'zh-CN'" src="/Timeline-SC-desktop.png")
+		img.phone(v-if="locale === 'zh-CN'" src="/Timeline-SC-mobile.png")
+		img.web(v-if="locale === 'en-US'" src="/Timeline-EN-desktop.png")
+		img.phone(v-if="locale === 'en-US'" src="/Timeline-EN-mobile.png")
 </template>
 
 <script setup>

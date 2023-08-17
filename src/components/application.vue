@@ -1,15 +1,15 @@
 <template lang="pug">
-section#registration
+section#application
 	.bg-img.star-01.web
 	.bg-img.star-02.web
 	.title
-		span {{ t('main.registration') }}
-	.content {{ t('registration.description') }}
+		span {{ t('main.application') }}
+	.content {{ t('application.description') }}
 	.docs
 		a(href="/logo.svg" download="logo.svg")
-			button.secindary(disabled) {{ t('registration.download') }}
-		.notice #[span  {{ t('registration.notice') }}]
-			.list {{ t('registration.list') }}
+			button.secindary(disabled) {{ t('application.download') }}
+		.notice #[span  {{ t('application.notice') }}]
+			.list {{ t('application.list') }}
 </template>
 
 <script setup>
@@ -19,7 +19,7 @@ const { t, locale } = useI18n()
 </script>
 
 <style lang="scss" scoped>
-#registration {
+#application {
 	position: relative;
 
 	display: flex;
@@ -129,19 +129,19 @@ const { t, locale } = useI18n()
 		@include web() {
 			gap: 20px;
 			&::before {
-				background-image: url('/registration-line-l_w.svg');
+				background-image: url('/application-line-l_w.svg');
 			}
 			&::after {
-				background-image: url('/registration-line-r_w.svg');
+				background-image: url('/application-line-r_w.svg');
 			}
 		}
 		@include phone() {
 			gap: 10px;
 			&::before {
-				background-image: url('/registration-line-l_m.svg');
+				background-image: url('/application-line-l_m.svg');
 			}
 			&::after {
-				background-image: url('/registration-line-r_m.svg');
+				background-image: url('/application-line-r_m.svg');
 			}
 		}
 		&::before,
