@@ -6,8 +6,12 @@ section#application
 		span {{ t('main.application') }}
 	.content {{ t('application.description') }}
 	.docs
-		a(href="/logo.svg" download="logo.svg")
-			button.secindary(disabled) {{ t('application.download') }}
+		a(v-if="locale === 'zh-TW'" href="/innofuture-of-fintech_deck_template_TC.pptx" download="團隊提案簡報模版.pptx")
+			button.secindary {{ t('application.download') }}
+		a(v-if="locale === 'zh-CN'" href="/innofuture-of-fintech_deck_template_SC.pptx" download="团队提案简报模版.pptx")
+			button.secindary {{ t('application.download') }}
+		a(v-if="locale === 'en-US'" href="/innofuture-of-fintech_deck_template_EN.pptx" download="Presentation Template.pptx")
+			button.secindary {{ t('application.download') }}
 		.notice #[span  {{ t('application.notice') }}]
 			.list {{ t('application.list') }}
 </template>
