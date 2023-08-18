@@ -48,9 +48,8 @@ export const zh = {
 		apply_now: '立即報名'
 	},
 	footer: {
-		sponsor: '主辦單位：上海商業儲蓄銀行',
-		co_organizer: '協辦單位：上海銀行、上海商業銀行',
-		organizer: '承辦單位：華陽創投、新創101',
+		sponsor: '主辦單位：上海商業儲蓄銀行、上海銀行、上海商業銀行',
+		organizer: '承辦單位：新創101',
 		contact: "聯絡我們：info{'@'}startup101.biz"
 	}
 }
@@ -92,9 +91,8 @@ export const cn = {
 	promotion: { stage1: '书审', stage2: '复审', stage3: '决赛', empty: '即将公布...' },
 	header: { apply_now: '立即报名' },
 	footer: {
-		sponsor: '主办单位：上海商业储蓄银行',
-		co_organizer: '协办单位：上海银行、上海商业银行',
-		organizer: '承办单位：华阳创投、新创101',
+		sponsor: '主办单位：上海商业储蓄银行、上海银行、上海商业银行',
+		organizer: '承办单位：新创101',
 		contact: "联络我们：info{'@'}startup101.biz"
 	}
 }
@@ -146,9 +144,9 @@ export const en = {
 	},
 	header: { apply_now: 'Apply Now' },
 	footer: {
-		sponsor: 'Organizer: \nShanghai Commercial & Savings Bank',
-		co_organizer: 'Co-organizer: \nBank of Shanghai, \nShanghai Commercial Bank',
-		organizer: 'Organizer: \nSunsino, \nSTARTUP101',
+		sponsor:
+			'Organizer: \nShanghai Commercial & Savings Bank, \nBank of Shanghai, \nShanghai Commercial Bank',
+		organizer: 'Organizer: \nSTARTUP101',
 		contact: "Contact us: info{'@'}startup101.biz"
 	}
 }

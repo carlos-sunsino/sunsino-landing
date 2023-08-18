@@ -4,7 +4,7 @@ section#partnership
 	.title
 		span {{ t('main.partnership') }}
 	.list
-		img(src="/partnership-logo-sunsino.png")
+		//- img(src="/partnership-logo-sunsino.png")
 		img(src="/partnership-logo-hkstp.png")
 		img(src="/partnership-logo-tta.svg")
 </template>

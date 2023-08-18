@@ -4,7 +4,6 @@
 		img(src="/logo.svg")
 		.itemGroup
 			.item {{ t('footer.sponsor') }}
-			.item {{ t('footer.co_organizer') }}
 			.item {{ t('footer.organizer') }}
 			.item {{ t('footer.contact') }}
 	.copyright © 2023 STARTUP101. All rights reserved.
