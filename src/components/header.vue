@@ -15,16 +15,23 @@
 				a(href="/zh-TW") {{ t("locale.zh") }}
 				a(href="/zh-CN") {{ t("locale.cn") }}
 				a(href="/en-US") {{ t("locale.en") }}
-		button.main.web(onclick="location.href='https://innofutureofbank.com/application/check'") {{ t('header.apply_now') }}
+		button.main.web(v-if="locale === 'zh-TW'" onclick=`location.href='https://innofutureofbank.com/zh-TW/application/check'`) {{ t('header.apply_now') }}
+		button.main.web(v-if="locale === 'zh-CN'" onclick=`location.href='https://innofutureofbank.com/zh-CN/application/check'`) {{ t('header.apply_now') }}
+		button.main.web(v-if="locale === 'en-US'" onclick=`location.href='https://innofutureofbank.com/en-US/application/check'`) {{ t('header.apply_now') }}
 		a.list.phone(v-if="!open" @click="open = !open")
 			img(src="/Header/Mobile/list.svg")
 		a.close.phone(v-if="open" @click="open = !open")
 			img(src="/Header/Mobile/close.svg")
 .board(:class="open?'open':''")
-	img(v-if="locale === 'zh-TW'" src="/banner-info_zh.png")
-	img(v-if="locale === 'zh-CN'" src="/banner-info_cn.png")
-	img(v-if="locale === 'en-US'" src="/banner-info_en.png")
-	button.main(onclick="location.href='https://innofutureofbank.com/application/check'") {{ t('header.apply_now') }}
+	template(v-if="locale === 'zh-TW'")
+		img(src="/banner-info_zh.png")
+		button.main(onclick=`location.href='https://innofutureofbank.com/zh-TW/application/check'`) {{ t('header.apply_now') }}
+	template(v-if="locale === 'zh-CN'")
+		img(src="/banner-info_cn.png")
+		button.main(onclick=`location.href='https://innofutureofbank.com/zh-CN/application/check'`) {{ t('header.apply_now') }}
+	template(v-if="locale === 'en-US'")
+		img(src="/banner-info_en.png")
+		button.main(onclick=`location.href='https://innofutureofbank.com/en-US/application/check'`) {{ t('header.apply_now') }}
 	a(href="#purpose-pos" @click="open = !open") {{ t('main.purpose') }}
 	a(href="#timeline-pos" @click="open = !open") {{ t('main.timeline')}}
 	a(href="#competition-pos" @click="open = !open") {{ t('main.competition')}}

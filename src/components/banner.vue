@@ -15,7 +15,9 @@ section#banner
 		img.web(src="/banner-cover_w.png")
 		img.phone(src="/banner-cover_m.png")
 	.main-link.phone
-		button.main(onclick="location.href='https://innofutureofbank.com/application/check'") {{ t('header.apply_now') }}
+		button.main(v-if="locale === 'zh-TW'" onclick=`location.href='https://innofutureofbank.com/zh-TW/application/check'`) {{ t('header.apply_now') }}
+		button.main(v-if="locale === 'zh-CN'" onclick=`location.href='https://innofutureofbank.com/zh-CN/application/check'`) {{ t('header.apply_now') }}
+		button.main(v-if="locale === 'en-US'" onclick=`location.href='https://innofutureofbank.com/en-US/application/check'`) {{ t('header.apply_now') }}
 </template>
 
 <script setup>
