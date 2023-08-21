@@ -1,7 +1,7 @@
 <template lang="pug">
 #header
 	.logo(v-if="!open")
-		a(href="https://startup101.biz")
+		a(href="https://innofutureofbank.com/")
 			img(src="/logo.svg")
 	.links.web
 		a(href="#purpose-pos") {{ t('main.purpose') }}
