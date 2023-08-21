@@ -139,7 +139,7 @@ export const en = {
 	promotion: {
 		stage1: 'First',
 		stage2: 'Review',
-		stage3: ' Final',
+		stage3: 'Final',
 		empty: 'Coming soon ...'
 	},
 	header: { apply_now: 'Apply Now' },
