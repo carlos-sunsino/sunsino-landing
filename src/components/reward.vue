@@ -9,7 +9,7 @@ section#reward
 			.name {{ t('reward.trophy_name') }}
 			.note {{ t('reward.trophy_note') }}
 			.amount {{ t('reward.trophy_amount') }}#[span {{ t('reward.trophy_amount_tip') }}]
-		.content {{ t('reward.description') }}
+		.content {{ t('reward.description') }} #[br]#[br] {{ t('reward.trophy_offer') }}
 </template>
 
 <script setup>
