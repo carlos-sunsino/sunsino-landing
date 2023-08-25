@@ -42,7 +42,9 @@ export const zh = {
 		stage1: '書審',
 		stage2: '複審',
 		stage3: '決賽',
-		empty: '即將公佈 ...'
+		stage1_empty: '將於 2023 年 09 月 25 日公布書審晉級名單',
+		stage2_empty: '將於 2023 年 10 月 17 日公布複審晉級名單',
+		stage3_empty: '將於 2023 年 11 月 14 日公布決賽獲勝名單'
 	},
 	header: {
 		apply_now: '立即報名'
@@ -88,7 +90,14 @@ export const cn = {
 		notice: '申请应备文件',
 		list: '提案简报\n参赛同意书'
 	},
-	promotion: { stage1: '书审', stage2: '复审', stage3: '决赛', empty: '即将公布...' },
+	promotion: {
+		stage1: '书审',
+		stage2: '复审',
+		stage3: '决赛',
+		stage1_empty: '将于 2023 年 09 月 25 日公布书审晋级名单',
+		stage2_empty: '将于 2023 年 10 月 17 日公布复审晋级名单',
+		stage3_empty: '将于 2023 年 11 月 14 日公布决赛获胜名单'
+	},
 	header: { apply_now: '立即报名' },
 	footer: {
 		sponsor: '主办单位：上海商业储蓄银行、上海银行、上海商业银行',
@@ -140,7 +149,10 @@ export const en = {
 		stage1: 'First',
 		stage2: 'Review',
 		stage3: 'Final',
-		empty: 'Coming soon ...'
+		stage1_empty:
+			'The list of companies advanced to the semi-final will be announced by 25 September 2023.',
+		stage2_empty: 'The list of the finalists will be announced by 17 October 2023.',
+		stage3_empty: 'The list of awarded companies will be announced by 14 November 2023.'
 	},
 	header: { apply_now: 'Apply Now' },
 	footer: {

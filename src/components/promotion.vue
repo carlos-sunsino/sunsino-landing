@@ -9,7 +9,9 @@ section#promotion
 		.tab(:class="switchTab === 'stage3'?'active':''" @click="switchTab = 'stage3'") {{ t('promotion.stage3') }}
 	.list
 		.team(v-for="team in teams[switchTab]") {{ team }}
-		.empty(v-if="teams[switchTab].length === 0") {{ t('promotion.empty') }}
+		.empty(v-if="teams[switchTab].length === 0 && switchTab === 'stage1'") {{ t('promotion.stage1_empty') }}
+		.empty(v-if="teams[switchTab].length === 0 && switchTab === 'stage2'") {{ t('promotion.stage2_empty') }}
+		.empty(v-if="teams[switchTab].length === 0 && switchTab === 'stage3'") {{ t('promotion.stage3_empty') }}
 </template>
 
 <script setup>
