@@ -41,18 +41,18 @@ export const zh = {
 		list: '提案簡報\n參賽同意書'
 	},
 	promotion: {
-		stage1: '書審',
-		stage2: '複審',
+		stage1: '初賽',
+		stage2: '複賽',
 		stage3: '決賽',
-		stage1_empty: '將於 2023 年 09 月 25 日公布書審晉級名單',
-		stage2_empty: '將於 2023 年 10 月 17 日公布複審晉級名單',
+		stage1_empty: '將於 2023 年 09 月 25 日公布初賽晉級名單',
+		stage2_empty: '將於 2023 年 10 月 17 日公布複賽晉級名單',
 		stage3_empty: '將於 2023 年 11 月 14 日公布決賽獲勝名單'
 	},
 	header: {
 		apply_now: '立即報名'
 	},
 	footer: {
-		sponsor: '主辦單位：上海商業儲蓄銀行、上海銀行、上海商業銀行',
+		sponsor: '主辦單位：上海銀行、上海商業銀行、上海商業儲蓄銀行',
 		organizer: '承辦單位：新創101',
 		contact: "聯絡我們：info{'@'}startup101.biz"
 	}
@@ -75,7 +75,7 @@ export const cn = {
 	},
 	competition: {
 		description:
-			'竞赛题目：\n运用新兴科技于银行各项业务场景中，以达优化客户体验、促进银行业务的永续创新模式。\n参赛企业可将您的产品于银行各项业务场景中提出应用方案，产品所採用的技术与使用的情境并无限制。\n请于9月14日前上传您的提案简报并完成报名手续。\n\n参赛注意事项：\n1. 决赛将选出三组队伍获得创新未来奖，将于赛后个别与上海银行（PoC地区：上海）、上海商业银行（PoC地区：香港）、上海商业储蓄银行（PoC地区：台北）进行PoC合作，参赛企业请于填写报名表单前先确认后续PoC相应的成本与其可能性，并于报名表单依可合作之区域志愿序填答。\n2. 提案简报中所使用语言限中文（简体／繁体）、英文，複赛（线上Pitch）与决赛（Demo Day）所使用语言限普通话、英文。\n3. 初赛后将依参赛队伍之志愿序及评分安排后续赛制组别（组别攸关複赛与决赛组别、该组别创新未来奖得主后续PoC地区等）。\n4. 入围複赛企业义务：应依主办单位安排参与本竞赛，包括Pitch Practice、複赛（线上Pitch）及因本竞赛所衍生之相关活动。\n入围决赛企业义务：应依主办单位安排参与本竞赛，包括决赛（决赛将于香港HKSTP举行，入围决赛之团队将补助每队美金500元作为交通补助）及因本竞赛所衍生之相关活动。\n5. 获得创新未来奖之企业义务：应依主办单位安排进行PoC及PoC所衍生之相关活动。"'
+			'竞赛题目：\n运用新兴科技于银行各项业务场景中，以达优化客户体验、促进银行业务的永续创新模式。\n参赛企业可将您的产品于银行各项业务场景中提出应用方案，产品所採用的技术与使用的情境并无限制。\n请于9月14日前上传您的提案简报并完成报名手续。\n\n参赛注意事项：\n1. 决赛将选出三组队伍获得创新未来奖，将于赛后个别与上海银行（PoC地区：上海）、上海商业银行（PoC地区：香港）、上海商业储蓄银行（PoC地区：台北）进行PoC合作，参赛企业请于填写报名表单前先确认后续PoC相应的成本与其可能性，并于报名表单依可合作之区域志愿序填答。\n2. 提案简报中所使用语言限中文（简体／繁体）、英文，複赛（线上Pitch）与决赛（Demo Day）所使用语言限普通话、英文。\n3. 初赛后将依参赛队伍之志愿序及评分安排后续赛制组别（组别攸关複赛与决赛组别、该组别创新未来奖得主后续PoC地区等）。\n4. 入围複赛企业义务：应依主办单位安排参与本竞赛，包括Pitch Practice、複赛（线上Pitch）及因本竞赛所衍生之相关活动。\n入围决赛企业义务：应依主办单位安排参与本竞赛，包括决赛（决赛将于香港HKSTP举行，入围决赛之团队将补助每队美金500元作为交通补助）及因本竞赛所衍生之相关活动。\n5. 获得创新未来奖之企业义务：应依主办单位安排进行PoC及PoC所衍生之相关活动。'
 	},
 	reward: {
 		description:
@@ -95,16 +95,16 @@ export const cn = {
 		list: '提案简报\n参赛同意书'
 	},
 	promotion: {
-		stage1: '书审',
-		stage2: '复审',
+		stage1: '初赛',
+		stage2: '复赛',
 		stage3: '决赛',
-		stage1_empty: '将于 2023 年 09 月 25 日公布书审晋级名单',
-		stage2_empty: '将于 2023 年 10 月 17 日公布复审晋级名单',
+		stage1_empty: '将于 2023 年 09 月 25 日公布初赛晋级名单',
+		stage2_empty: '将于 2023 年 10 月 17 日公布复赛晋级名单',
 		stage3_empty: '将于 2023 年 11 月 14 日公布决赛获胜名单'
 	},
 	header: { apply_now: '立即报名' },
 	footer: {
-		sponsor: '主办单位：上海商业储蓄银行、上海银行、上海商业银行',
+		sponsor: '主办单位：上海银行、上海商业银行、上海商业储蓄银行',
 		organizer: '承办单位：新创101',
 		contact: "联络我们：info{'@'}startup101.biz"
 	}
@@ -163,7 +163,7 @@ export const en = {
 	header: { apply_now: 'Apply Now' },
 	footer: {
 		sponsor:
-			'Organizer: \nShanghai Commercial & Savings Bank, \nBank of Shanghai, \nShanghai Commercial Bank',
+			'"Organizer:\nBank of Shanghai,\nShanghai Commercial Bank,\nShanghai Commercial & Savings Bank"',
 		organizer: 'Organizer: \nSTARTUP101',
 		contact: "Contact us: info{'@'}startup101.biz"
 	}

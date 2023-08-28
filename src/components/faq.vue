@@ -21,74 +21,79 @@ const faqlist = reactive({
 	'zh-TW': [
 		{
 			isOpen: false,
+			question: 'Q：可以同時報名多地區嗎？',
+			answer: 'A：如參賽企業於確認可於多地區 PoC 而計畫報名多個地區，可於報名表上依志願填寫地區志願序。如團隊報名多個地區，將於初賽後將依參賽隊伍之志願序及評分安排後續賽制組別。\n唯參賽企業於報名前請務必確認後續 PoC 或其他合作可配合主辦單位安排。'
+		},
+		{
+			isOpen: false,
 			question: 'Q：是否需繳交報名費用？',
-			answer: 'A： 本競賽無需報名費。'
+			answer: 'A：本競賽無需報名費。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：如果報名或填寫申請文件遇到問題時，怎麼辦？',
-			answer: 'A：發信至 info@startup101.biz 提問，或是來電執行單位詢問\n（華陽創投 Rayz +886-2-7718-6088 #240）'
+			answer: 'A：發信至info@startup101.biz提問，或是來電承辦單位詢問\n（華陽創投／STARTUP101／Rayz+886-2-7718-6088 #240）。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：初賽及複賽結果是否會通知？',
-			answer: 'A：會由承辦單位以 E-mail 方式通知聯絡人，並請關注本網站公告。'
+			answer: 'A：會由承辦單位以 E-mail 方式通知，並請關注本網站公告。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：有需要達成的義務嗎？',
-			answer: 'A：通過複賽者之企業須達成義務：入圍決賽之企業需於決賽 Demo Day 前往香港決賽場地進行現場 Pitch，報到時將提供團隊500美元交通補助\n通過決賽者之冠軍企業須達成義務：配合主辦單位及協辦單位安排，至少參與1場合作意向會議。'
+			answer: 'A：通過複賽者之企業須達成義務：\n入圍決賽之企業需於決賽Demo Day前往香港決賽場地進行現場Pitch，報到時將提供團隊500美元交通補助。\n獲得創新未來獎之企業須達成義務：\n配合主辦單位及協辦單位安排進行PoC及PoC所衍生之相關活動。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：最後申請日是何時？',
-			answer: 'A：申請截止期間為 2023 年 09 月 14 日 17 點 00 分點選報名連結填寫，完成後系統將寄送【申請確認信】，唯最後補件日為 09 月 15 日 17 點 00 分，故請儘早完成報名確保參賽資格。'
+			answer: 'A：申請截止期間為 2023年09月14日 17點00分點選報名連結填寫，報名資格及文件審查完成後系統將寄送【成功報名通知信】，唯最後補件日為 9月15日 17點00分，故請儘早完成報名確保參賽資格。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：參賽人員是否有人數及身分限制？',
-			answer: 'A：人數無限制，參賽人員須為公司員工；而報名系統中提列之參賽人員名單，皆須親筆簽署參賽同意書。'
-		},
-		{
-			isOpen: false,
-			question: 'Q：主辦、協辦、承辦企業是否會簽署保密同意書？',
-			answer: 'A：是的。根據本競賽須知載明，主辦單位、協辦單位及承辦單位均須簽署【保密協議書】。'
+			answer: 'A：人數無限制，參賽人員須為公司員工。'
 		}
 	],
 	'zh-CN': [
+		{
+			isOpen: false,
+			question: 'Q：可以同时报名多地区吗？',
+			answer: 'A：如参赛企业于确认可于多地区 PoC 而计画报名多个地区，可于报名表上依志愿填写地区志愿序。如团队报名多个地区，将于初赛后将依参赛队伍之志愿序及评分安排后续赛制组别。\n唯参赛企业于报名前请务必确认后续 PoC 或其他合作可配合主办单位安排。'
+		},
 		{ isOpen: false, question: 'Q：是否需要缴纳报名费用？', answer: 'A：本竞赛无需报名费。' },
 		{
 			isOpen: false,
-			question: 'Q：如果报名或填写申请文件时遇到问题，怎么办？',
-			answer: 'A：发信至 info@startup101.biz 提问，或来电执行单位询问\n（华阳创投 Rayz +886-2-7718-6088 #240）。'
+			question: 'Q：如果报名或填写申请文件遇到问题时，怎么办？',
+			answer: 'A：发信至info@startup101.biz提问，或是来电承办单位询问\n（华阳创投／STARTUP101／Rayz+886-2-7718-6088 #240）。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：初赛及复赛结果是否会通知？',
-			answer: 'A：会由承办单位以 E-mail 方式通知联络人，并请关注本网站公告。'
+			answer: 'A：会由承办单位以 E-mail 方式通知，并请关注本网站公告。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：有需要达成的义务吗？',
-			answer: 'A：通过复赛的企业须达成义务：入围决赛的企业需在决赛 Demo Day 前往香港决赛场地进行现场 Pitch，报到时将提供团队500美元的交通补助\n通过决赛的冠军企业须达成义务：配合主办单位及协办单位安排，至少参与1场合作意向会议。'
+			answer: 'A：通过复赛的企业须达成义务：\n入围决赛的企业需在决赛Demo Day前往香港决赛场地进行现场Pitch，报到时将提供团队500美元的交通补助\n通过决赛的冠军企业须达成义务：\n配合主办单位及协办单位安排，至少参与1场合作意向会议。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：最后申请日是何时？',
-			answer: 'A：申请截止期间为 2023 年 09 月 14 日 17 点 00 分，点击报名链接填写，完成后系统将寄送【申请确认信】，最后补件日为 09 月 15 日 17 点 00 分，故请尽早完成报名，以确保参赛资格。'
+			answer: 'A：申请截止期间为 2023年09月14日 17点00分点选报名连结填写，报名资格及文件审查完成后系统将寄送【成功报名通知信】，唯最后补件日为 9月15日 17点00分，故请尽早完成报名确保参赛资格。'
 		},
 		{
 			isOpen: false,
 			question: 'Q：参赛人员是否有人数及身份限制？',
-			answer: 'A：人数无限制，参赛人员须为公司员工；而报名系统中提列的参赛人员名单，皆须亲笔签署参赛同意书。'
-		},
-		{
-			isOpen: false,
-			question: 'Q：主办、协办、承办企业是否会签署保密同意书？',
-			answer: 'A：是的。根据本竞赛须知载明，主办单位、协办单位及承办单位均须签署【保密协议书】。'
+			answer: 'A：人数无限制，参赛人员须为公司员工。'
 		}
 	],
 	'en-US': [
+		{
+			isOpen: false,
+			question: 'Q: Can I register for multiple regions at the same time?',
+			answer: 'A: If Participating startup can confirm their ability to participate in Proof of Concept (PoC) in multiple regions and plan to apply for multiple regions, you can indicate your region preferences on the application form. If a team applies for multiple regions, the semifinal and final rounds that the team will participate in will be arranged based on the ranking of participating companies after the preliminary round. However, participating companies should ensure their ability to cooperate in PoC or other collaborations before registering.'
+		},
 		{
 			isOpen: false,
 			question: 'Q: Is there a application fee?',
@@ -97,34 +102,28 @@ const faqlist = reactive({
 		{
 			isOpen: false,
 			question:
-				'Q: What should I do if I encounter any problems while registering or filling out the application forms?',
-			answer: 'A: You can send inquiries to  info@startup101.biz or call the organization office\n(Sunsino Rayz +886-2-7718-6088 #240).'
+				'Q: What if I encounter any problems while registering or filling out the application forms?',
+			answer: 'A: You can send the problems or inquiries to  info@startup101.biz or call the  executing unit\n(Sunsino Rayz +886-2-7718-6088 #240).'
 		},
 		{
 			isOpen: false,
 			question: 'Q: Will the results of the preliminary and semi-final rounds be announced?',
-			answer: 'A: The organizer will notify the contact person by email, and you can also find the announcements on this website.'
+			answer: 'A: The organizer will notify the contact by email, and please also pay attention to announcements on this website.'
 		},
 		{
 			isOpen: false,
-			question: 'Q: Are there any obligations that must be met?',
-			answer: 'A: For companies that pass the semifinals, the following obligations must be met:\n- Companies that make it to the final round must attend the on-site demo day at the final round venue in Hong Kong. A transportation subsidy of 500 USD per team will be provided upon registration.\n\nCompanies that win the finals must fulfill the following commitment:\n- The winning company must collaborate with the organizing and co-organizing entities and attend at least one collaboration meeting.'
+			question: 'Q: Are there any obligations to fulfill?',
+			answer: 'A: For companies that pass the semifinals round must fulfill the following obligations.\n- Startup that make it to the final round must attend the on-site demo day at the final round venue in Hong Kong. A transportation subsidy of 500 USD per team will be provided upon on-site registration.\n\nThe InnoFuture awarded company must fulfill the following obligation:\n- Cooperate with the organizer and co-organizer to attend at least 1 cooperation intention meeting.'
 		},
 		{
 			isOpen: false,
-			question: 'Q: When is the last date to apply?',
-			answer: 'A: The deadline for application is September 14, 2023 at 5:00 pm. After you complete the application through the provided link, the system will send a confirmation email. However, the last date for submitting additional documents is September 15, 2023 at 5:00 pm. It is therefore advisable to complete registration early to ensure eligibility.'
+			question: 'Q: When is the last date of registration?',
+			answer: 'A: The deadline for registration is September 14, 2023 at 5:00 pm. After you complete the online registration form the system will send a confirmation email. However, the last date for submitting additional documents is September 15, 2023 at 5:00 pm.Therefore, please complete the registration early to ensure eligibility.'
 		},
 		{
 			isOpen: false,
 			question: 'Q: Is there a limit to the number and identity of participants?',
-			answer: 'A: There is no limit on participants, but those participating must be employees of the company. Everyone must hand-sign the list of participating individuals provided in the registration system.'
-		},
-		{
-			isOpen: false,
-			question:
-				'Q: Do the organizing, co-organizing companies sign a confidentiality agreement?',
-			answer: 'A: Yes. According to the contest guidelines, the organizing entity, co-organizing entities must sign a confidentiality agreement.'
+			answer: 'A: There is no limit on participants, but those participating must be employees of the startup. '
 		}
 	]
 })
