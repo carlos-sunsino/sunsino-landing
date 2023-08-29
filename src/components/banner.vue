@@ -15,9 +15,9 @@ section#banner
 		img.web(src="/banner-cover_w.png")
 		img.phone(src="/banner-cover_m.png")
 	.main-link.phone
-		button.main(v-if="locale === 'zh-TW'" onclick=`location.href='https://innofutureofbank.com/zh-TW/application/check'`) {{ t('header.apply_now') }}
-		button.main(v-if="locale === 'zh-CN'" onclick=`location.href='https://innofutureofbank.com/zh-CN/application/check'`) {{ t('header.apply_now') }}
-		button.main(v-if="locale === 'en-US'" onclick=`location.href='https://innofutureofbank.com/en-US/application/check'`) {{ t('header.apply_now') }}
+		button.main(v-if="locale === 'zh-TW'" onclick=`location.href='/zh-TW/application/check'`) {{ t('header.apply_now') }}
+		button.main(v-if="locale === 'zh-CN'" onclick=`location.href='/zh-CN/application/check'`) {{ t('header.apply_now') }}
+		button.main(v-if="locale === 'en-US'" onclick=`location.href='/en-US/application/check'`) {{ t('header.apply_now') }}
 </template>
 
 <script setup>
@@ -27,172 +27,171 @@ const { t, locale } = useI18n()
 
 <style lang="scss" scoped>
 #banner {
-    position: relative;
+	position: relative;
 
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    box-sizing: border-box;
-    padding-top: 100px;
+	box-sizing: border-box;
+	padding-top: 100px;
 
-    @include web() {
-        height: 100vh;
-        max-height: 800px;
-        margin-bottom: -80px;
-        &::before,
-        &::after {
-            width: 922px;
-            height: 922px;
+	@include web() {
+		height: 100vh;
+		max-height: 800px;
+		margin-bottom: -80px;
+		&::before,
+		&::after {
+			width: 922px;
+			height: 922px;
 
-            border-radius: 922px;
-        }
-        &::before {
-            top: 100px;
-            left: 50%;
+			border-radius: 922px;
+		}
+		&::before {
+			top: 100px;
+			left: 50%;
 
-            transform: translateX(calc(-50% - 600px));
-        }
-        &::after {
-            top: -300px;
-            left: 50%;
+			transform: translateX(calc(-50% - 600px));
+		}
+		&::after {
+			top: -300px;
+			left: 50%;
 
-            transform: translateX(calc(-50% + 600px));
-        }
-    }
-    @include phone() {
-        height: 700px;
-        margin-bottom: 70px;
+			transform: translateX(calc(-50% + 600px));
+		}
+	}
+	@include phone() {
+		height: 700px;
+		margin-bottom: 70px;
 
-        &::before,
-        &::after {
-            width: 485px;
-            height: 485px;
+		&::before,
+		&::after {
+			width: 485px;
+			height: 485px;
 
-            border-radius: 485px;
-        }
-        &::before {
-            top: -20%;
-            left: -50%;
-        }
-        &::after {
-            right: -50%;
-            bottom: -20%;
-        }
-    }
+			border-radius: 485px;
+		}
+		&::before {
+			top: -20%;
+			left: -50%;
+		}
+		&::after {
+			right: -50%;
+			bottom: -20%;
+		}
+	}
 
-    &::before,
-    &::after {
-        position: absolute;
-        z-index: 1;
+	&::before,
+	&::after {
+		position: absolute;
+		z-index: 1;
 
-        content: '';
+		content: '';
 
-        opacity: .3;
-        background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
-    }
-    .bg-img {
-        &.l01 {
-            top: 170px;
-            left: 50%;
+		opacity: 0.3;
+		background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
+	}
+	.bg-img {
+		&.l01 {
+			top: 170px;
+			left: 50%;
 
-            transform: translateX(calc(-50% + -550px));
-        }
-        &.l02 {
-            top: 280px;
-            left: 50%;
+			transform: translateX(calc(-50% + -550px));
+		}
+		&.l02 {
+			top: 280px;
+			left: 50%;
 
-            transform: translateX(calc(-50% + -400px));
-        }
-        &.l03 {
-            top: 430px;
-            left: 50%;
+			transform: translateX(calc(-50% + -400px));
+		}
+		&.l03 {
+			top: 430px;
+			left: 50%;
 
-            transform: translateX(calc(-50% + -480px));
-        }
-        &.r01 {
-            top: 180px;
-            left: 50%;
+			transform: translateX(calc(-50% + -480px));
+		}
+		&.r01 {
+			top: 180px;
+			left: 50%;
 
-            transform: translateX(calc(-50% + 500px));
-        }
-        &.r02 {
-            top: 340px;
-            left: 50%;
+			transform: translateX(calc(-50% + 500px));
+		}
+		&.r02 {
+			top: 340px;
+			left: 50%;
 
-            transform: translateX(calc(-50% + 400px));
-        }
-        &.r03 {
-            top: 420px;
-            left: 50%;
+			transform: translateX(calc(-50% + 400px));
+		}
+		&.r03 {
+			top: 420px;
+			left: 50%;
 
-            transform: translateX(calc(-50% + 480px));
-        }
-    }
+			transform: translateX(calc(-50% + 480px));
+		}
+	}
 }
 .main-info,
 .main-cover {
-    img {
-        @include web() {
-            height: 100%;
-        }
-        @include phone() {
-            width: 100%;
-        }
-    }
+	img {
+		@include web() {
+			height: 100%;
+		}
+		@include phone() {
+			width: 100%;
+		}
+	}
 }
 .main-info {
-    z-index: 1000;
+	z-index: 1000;
 
-    @include web() {
-        height: 45%;
+	@include web() {
+		height: 45%;
 
-        transform: translateY(30px);
-    }
-    @include phone() {
-        width: 100vw;
+		transform: translateY(30px);
+	}
+	@include phone() {
+		width: 100vw;
 
-        transform: translateY(60px);
-    }
+		transform: translateY(60px);
+	}
 }
 .main-cover {
-    @include web() {
-        height: 70%;
+	@include web() {
+		height: 70%;
 
-        transform: translateY(-180px);
-    }
-    @include phone() {
-        width: 100vw;
+		transform: translateY(-180px);
+	}
+	@include phone() {
+		width: 100vw;
 
-        transform: translateY(-40px);
-    }
+		transform: translateY(-40px);
+	}
 }
 .main-link {
-    position: relative;
-    z-index: 10;
+	position: relative;
+	z-index: 10;
 
-    flex: 0;
+	flex: 0;
 
-    height: 90px;
+	height: 90px;
 
-    transform: translateY(-20px);
+	transform: translateY(-20px);
 
-    button {
-        &::before {
-            position: absolute;
-            z-index: -1;
-            top: 0;
+	button {
+		&::before {
+			position: absolute;
+			z-index: -1;
+			top: 0;
 
-            width: 90vw;
-            height: 100px;
+			width: 90vw;
+			height: 100px;
 
-            content: '';
+			content: '';
 
-            background-image: url('/banner-link.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-        }
-    }
+			background-image: url('/banner-link.png');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+		}
+	}
 }
-
 </style>
