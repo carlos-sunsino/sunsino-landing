@@ -6,11 +6,11 @@ section#application
 		span {{ t('main.application') }}
 	.content {{ t('application.description') }}
 	.docs
-		a(v-if="locale === 'zh-TW'" href="/「創新未來」團隊提案簡報模版.pptx" download="「創新未來」團隊提案簡報模版.pptx")
+		a(v-if="locale === 'zh-TW'" href="/「創新未來」團隊提案簡報模版-light_CN.pptx" download="「創新未來」團隊提案簡報模版.pptx")
 			button.secindary {{ t('application.download') }}
-		a(v-if="locale === 'zh-CN'" href="/「创新未来」团队提案简报模版.pptx" download="「创新未来」团队提案简报模版.pptx")
+		a(v-if="locale === 'zh-CN'" href="/「創新未來」團隊提案簡報模版-light_SC.pptx" download="「创新未来」团队提案简报模版.pptx")
 			button.secindary {{ t('application.download') }}
-		a(v-if="locale === 'en-US'" href="/[Innofuture of Fintech] Proposal Template.pptx" download="[Innofuture of Fintech] Proposal Template.pptx")
+		a(v-if="locale === 'en-US'" href="/「創新未來」團隊提案簡報模版-light_EN.pptx" download="[Innofuture of Fintech] Proposal Template.pptx")
 			button.secindary {{ t('application.download') }}
 		.notice #[span  {{ t('application.notice') }}]
 			.list {{ t('application.list') }}
