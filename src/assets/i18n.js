@@ -128,7 +128,7 @@ export const en = {
 	},
 	purpose: {
 		description:
-			'In recent years, the financial industry has undergone significant changes with the rapid development of digitalization, blockchain, artificial intelligence and other fields. In order to provide comprehensive services and efficient experiences to customers, the transformation of the financial industry requires new creative ideas and innovative technologies from entrepreneurs.\n\nThis year, Shanghai Commercial & Savings Bank in Mainland China, Hong Kong Shanghai Banking Corporation (HSBC) in Hong Kong, and Taiwan Shanghai Commercial & Savings Bank (SCSB) are holding the "2023 InnoFuture of FinTech - Fintech Innovation Proposal Competition" This competition not only represents the great importance and support that these three SCSB entities attach to financial technology innovation, but also demonstrates their ambitious efforts to work with startups in the three regions.'
+			'"2023InnoFuture of FinTech" provides an ideal platform for Fintech entrepreneurs to showcase and connect their innovations with unparalleled support from these three major banks. \nWe invite startups that dare to dream big and disrupt the Insurtech and Fintech landscape, including areas such as digitalization, blockchain, artificial intelligence, and more.'
 	},
 	competition: {
 		description:
