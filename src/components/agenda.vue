@@ -9,19 +9,19 @@ section#agenda
 				.num 1.
 				.topic Welcome and Introduction
 				.sub
-					.info.time 14:00 AM - 14:30 AM
+					.info.time 14:00 PM - 14:30 PM
 					.info.location ONLINE &#[br] OFFLINE (Taiwan Tech Arena)
 			.card
 				.num 2.
 				.topic Fireside Chat: How Corporate and Startups Should Collaborate, and Why?
 				.sub
-					.info.time 14:30 AM - 15:30 AM
+					.info.time 14:30 PM - 15:30 PM
 					.info.location ONLINE &#[br] OFFLINE (Taiwan Tech Arena)
 			.card
 				.num 3.
 				.topic Pitch: AI x B2B Solutions
 				.sub
-					.info.time 15:40 AM - 16:30 PM
+					.info.time 15:40 PM - 16:30 PM
 					.info.location ONLINE &#[br] OFFLINE (Taiwan Tech Arena)
 </template>
 
