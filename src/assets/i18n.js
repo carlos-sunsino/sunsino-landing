@@ -38,7 +38,7 @@ export const zh = {
 			'參賽企業於 2023/09/14 前點選報名連結填妥參賽企業基本資料表，承辦單位將進行資料檢核，並以電子郵件通知資格檢核結果。通過者請於本網頁下載參賽應備文件，並於規定時間內以指定方式繳交，無需繳交紙本。\n\n申請資格及參賽文件均符合規定者，將於3個工作日內收到執行單位寄發「企業通過初賽資格」之通知電子郵件，參賽企業收受該電子郵件後即屬完成申請程序，進入初賽。\n資料如有缺漏者，將另行通知補件，請於收受補件通知郵件3工作日內完成補件，最後補件日為09月15日，逾期未完成補件者將不予受理。',
 		download: '下載資料',
 		notice: '申請應備文件',
-		list: '提案簡報\n參賽同意書'
+		list: '提案簡報'
 	},
 	promotion: {
 		stage1: '初賽',
@@ -92,7 +92,7 @@ export const cn = {
 			'参赛企业于 2023/09/14 前点击报名链接填写参赛企业基本数据表，承办单位将进行数据核验，并以电子邮件通知资格核验结果。审核通过企业请于本网页下载参赛应备文件，并于规定时间内提交电子版。\n\n申请资格及参赛文件均符合规定者，将于3个工作日内收到执行单位发送的「企业通过初赛资格」通知电子邮件，参赛企业收到该电子邮件后，即代表申请程序完成，可进入初赛。\n资料如有缺漏者，将另行通知补件，请于收到补件通知邮件的3个工作日内完成补件，最后补件日为09月15日，逾期未完成补件者将不予受理。',
 		download: '下载资料',
 		notice: '申请应备文件',
-		list: '提案简报\n参赛同意书'
+		list: '提案简报'
 	},
 	promotion: {
 		stage1: '初赛',
@@ -149,7 +149,7 @@ export const en = {
 			'Participating companies should click on the application link and complete the basic company information form before September 14, 2023. The organizational unit will then conduct an information verification and notify the results of the qualification exam via email. Those who pass the exam should download the required competition documents from this website and submit them by the deadline using the provided method. Physical copies are not required.\n\nCompanies whose eligibility and submitted documents meet the requirements will receive an email titled "Company advances to the preliminary round" within 3 business days. Upon receipt of this email, the participating company\'s application process will be considered complete and it will advance to the preliminary round.\n\nIf any data is missing or incomplete, you will be asked separately for additional documentation by the organizational unit. Please submit the additional documentation within 3 business days of receiving the notification. The final deadline for submitting additional documentation is September 15. Documents submitted after this deadline will not be accepted.',
 		download: 'Download information',
 		notice: 'Documents required for application',
-		list: 'Proposal Briefing\nParticipation Consent'
+		list: 'Proposal Briefing'
 	},
 	promotion: {
 		stage1: 'First',
