@@ -4,9 +4,9 @@ section#purpose
 	.title
 		span {{ t('main.purpose') }}
 	.content {{ t('purpose.description') }}
-	//- .media
-	//- 	video(preload='none' controls playsinline)
-	//- 		source(src="/promotional.mp4" type="video/mp4")
+	.media
+		video(preload='none' controls playsinline)
+			source(src="/promotional.mp4" type="video/mp4")
 </template>
 
 <script setup>
@@ -26,7 +26,7 @@ const { t, locale } = useI18n()
 	@include web() {
 		padding: 100px 30px;
 
-		// background-image: url('/purpose-bg_w.png');
+		background-image: url('/purpose-bg_w.png');
 		background-repeat: repeat-x;
 		background-position: center bottom;
 		background-size: 2560px 740px;
@@ -34,7 +34,7 @@ const { t, locale } = useI18n()
 	@include phone() {
 		padding: 50px 30px;
 
-		// background-image: url('/purpose-bg_m.png');
+		background-image: url('/purpose-bg_m.png');
 		background-repeat: no-repeat;
 		background-position: center bottom;
 		background-size: contain;

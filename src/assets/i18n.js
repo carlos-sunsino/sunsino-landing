@@ -25,7 +25,7 @@ export const zh = {
 	},
 	reward: {
 		description:
-			'各地區僅選出1家參賽企業（共計3位冠軍）\n冠軍隊伍可獲得新台幣50萬元（未稅）\n\n通過決賽之參賽企業，每家可獲得新台幣50萬元\n配合主辦單位及協辦單位安排，至少參與1場合作意向會議後撥付。',
+			'各地區僅選出1家參賽企業（共計3位冠軍）\n冠軍隊伍可獲得新台幣50萬元（未稅）\n配合主辦單位及協辦單位安排，至少參與1場合作意向會議後撥付。',
 		trophy_offer:
 			'獎金發放方式：\n決賽結束後，將先支付總獎金的30%，待PoC完成後，將餘下的70%一併支付。\n上海銀行所選之創新未來獎得主獎金為人民幣113,000元\n上海商業銀行所選之創新未來獎得主獎金為港幣122,000元\n上海商業儲蓄銀行所選之創新未來獎得主獎金為新台幣500,000元\n',
 		trophy_name: '創新未來獎',
@@ -79,7 +79,7 @@ export const cn = {
 	},
 	reward: {
 		description:
-			'各地区仅选出1家参赛企业（共计3位冠军）\n冠军队伍可获得50万新台币（未税）\n\n通过决赛的参赛企业，每家可获得50万新台币\n配合主办单位及协办单位安排，至少参与1场合作意向会议后拨付。',
+			'各地区仅选出1家参赛企业（共计3位冠军）\n冠军队伍可获得50万新台币（未税）\n配合主办单位及协办单位安排，至少参与1场合作意向会议后拨付。',
 		trophy_offer:
 			'奖金发放方式：\n决赛结束后，将先支付总奖金的30%，待PoC完成后，将馀下的70%一併支付。\n上海银行所选之创新未来奖得主奖金为人民币113,000元\n上海商业银行所选之创新未来奖得主奖金为港币122,000元\n上海商业储蓄银行所选之创新未来奖得主奖金为新台币500,000元',
 		trophy_name: '创新未来奖',
@@ -136,7 +136,7 @@ export const en = {
 	},
 	reward: {
 		description:
-			'Each region will select only one participating company, so there will be a total of 3 champions.\nThe winning teams will each receive prize money of NTD 500,000 (before taxes).\n\nFor the participating companies that successfully pass the finals, each company will receive NTD 500,000.\nUpon agreement with the organizer and co-organizer, the prize will be paid after the participating company has attended at least one collaboration meeting.',
+			'Each region will select only one participating company, so there will be a total of 3 champions.\nThe winning teams will each receive prize money of NTD 500,000 (before taxes).\nUpon agreement with the organizer and co-organizer, the prize will be paid after the participating company has attended at least one collaboration meeting.',
 		trophy_offer:
 			'Prize awarded method:\n30% of the prize will be paid after the final, the 70% rest will be paid after the PoC is done.\nThe winner of the InnoFuture Award chosen by the Bank of Shanghai will receive RMB¥113,000 in total.\nThe winner of the InnoFuture Award chosen by the Shanghai Commercial Bank will receive HK$122,000 in total.\nThe winner of the InnoFuture Award chosen by the Shanghai Commercial and Savings Bank will receive NT$500,000 in total.',
 		trophy_name: 'InnoFuture Award',
