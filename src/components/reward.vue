@@ -5,11 +5,14 @@ section#reward
 		span {{ t('main.reward') }}
 	.block
 		.trophy
-			img(src="/logo.svg")
+			img(src="/trophy.png")
 			.name {{ t('reward.trophy_name') }}
 			.note {{ t('reward.trophy_note') }}
 			.amount {{ t('reward.trophy_amount') }}#[span {{ t('reward.trophy_amount_tip') }}]
-		.content {{ t('reward.description') }} #[br]#[br] {{ t('reward.trophy_offer') }}
+		.content
+			.description {{ t('reward.description') }}
+			.trophy-title {{ t('reward.trophy_title') }}
+			.trophy-offer {{ t('reward.trophy_offer') }}
 </template>
 
 <script setup>
@@ -58,12 +61,11 @@ const { t, locale } = useI18n()
 		gap: 5px;
 		font-feature-settings: 'calt' off;
 		img {
-			width: 130px;
-			height: 130px;
-			margin-bottom: 20px;
+			width: 250px;
+			height: 250px;
+			margin-bottom: -30px;
 
 			border-radius: 100%;
-			background-color: #ffffff18;
 
 			object-fit: cover;
 		}
@@ -86,6 +88,10 @@ const { t, locale } = useI18n()
 		}
 	}
 	.content {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+
 		text-align: left;
 		white-space: pre-line;
 
@@ -104,6 +110,22 @@ const { t, locale } = useI18n()
 		@include phone() {
 			max-width: 100vw;
 		}
+	}
+	.description {
+		margin-bottom: 50px;
+	}
+	.trophy-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		margin-bottom: 20px;
+		padding: 4px 26px;
+
+		border-radius: 100px;
+		background: rgba(108, 198, 218, 0.5);
+
+		gap: 10px;
 	}
 }
 </style>

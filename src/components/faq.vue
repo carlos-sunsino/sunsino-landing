@@ -47,7 +47,7 @@ const faqlist = reactive({
 		{
 			isOpen: false,
 			question: 'Q：最後申請日是何時？',
-			answer: 'A：申請截止期間為 2023年09月14日 17點00分點選報名連結填寫，報名資格及文件審查完成後系統將寄送【成功報名通知信】，唯最後補件日為 9月15日 17點00分，故請儘早完成報名確保參賽資格。'
+			answer: 'A：申請截止期間為 2023年09月19日 17點00分點選報名連結填寫，報名資格及文件審查完成後系統將寄送【成功報名通知信】，唯最後補件日為 9月20日 17點00分，故請儘早完成報名確保參賽資格。'
 		},
 		{
 			isOpen: false,
@@ -80,7 +80,7 @@ const faqlist = reactive({
 		{
 			isOpen: false,
 			question: 'Q：最后申请日是何时？',
-			answer: 'A：申请截止期间为 2023年09月14日 17点00分点选报名连结填写，报名资格及文件审查完成后系统将寄送【成功报名通知信】，唯最后补件日为 9月15日 17点00分，故请尽早完成报名确保参赛资格。'
+			answer: 'A：申请截止期间为 2023年09月19日 17点00分点选报名连结填写，报名资格及文件审查完成后系统将寄送【成功报名通知信】，唯最后补件日为 9月20日 17点00分，故请尽早完成报名确保参赛资格。'
 		},
 		{
 			isOpen: false,
@@ -118,7 +118,7 @@ const faqlist = reactive({
 		{
 			isOpen: false,
 			question: 'Q: When is the last date of registration?',
-			answer: 'A: The deadline for registration is September 14, 2023 at 5:00 pm. After you complete the online registration form the system will send a confirmation email. However, the last date for submitting additional documents is September 15, 2023 at 5:00 pm.Therefore, please complete the registration early to ensure eligibility.'
+			answer: 'A: The deadline for registration is September 19, 2023 at 5:00 pm. After you complete the online registration form the system will send a confirmation email. However, the last date for submitting additional documents is September 20, 2023 at 5:00 pm.Therefore, please complete the registration early to ensure eligibility.'
 		},
 		{
 			isOpen: false,

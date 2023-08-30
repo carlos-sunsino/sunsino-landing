@@ -152,7 +152,7 @@ const teams = {
 
 			opacity: 0.3;
 			border-radius: 485px;
-			background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
+			background: radial-gradient(50% 50% at 50% 50%, #0c54c0 0%, rgba(0, 255, 255, 0) 100%);
 		}
 	}
 	.team {

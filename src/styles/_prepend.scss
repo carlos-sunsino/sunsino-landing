@@ -8,7 +8,6 @@ $breakpoint_phone: 640px;
 
 // Content Width
 $content_w: 700px;
-
 @mixin web() {
 	@media (min-width: $breakpoint_phone) {
 		@content;

@@ -1,19 +1,6 @@
 <template lang="pug">
 section#banner
 	#purpose-pos
-	.bg-img.ticket-05.l01
-	.bg-img.ticket-06.l02
-	.bg-img.ticket-07.l03
-	.bg-img.ticket-07.r01
-	.bg-img.ticket-06.m.r02
-	.bg-img.ticket-05.r03
-	.main-info
-		img(v-if="locale === 'zh-TW'" src="/banner-info_zh.png")
-		img(v-if="locale === 'zh-CN'" src="/banner-info_cn.png")
-		img(v-if="locale === 'en-US'" src="/banner-info_en.png")
-	.main-cover
-		img.web(src="/banner-cover_w.png")
-		img.phone(src="/banner-cover_m.png")
 	.main-link.phone
 		button.main(v-if="locale === 'zh-TW'" onclick=`location.href='/zh-TW/application/check'`) {{ t('header.apply_now') }}
 		button.main(v-if="locale === 'zh-CN'" onclick=`location.href='/zh-CN/application/check'`) {{ t('header.apply_now') }}
@@ -31,14 +18,21 @@ const { t, locale } = useI18n()
 
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-end;
 
 	box-sizing: border-box;
 	padding-top: 100px;
 
+	background-repeat: no-repeat;
+
 	@include web() {
 		height: 100vh;
-		max-height: 800px;
+		max-height: 700px;
 		margin-bottom: -80px;
+
+		background-image: url('/banner-cover_w.png');
+		background-position: center top;
+		background-size: auto 100%;
 		&::before,
 		&::after {
 			width: 922px;
@@ -60,110 +54,28 @@ const { t, locale } = useI18n()
 		}
 	}
 	@include phone() {
-		height: 700px;
-		margin-bottom: 70px;
+		height: 85vh;
+		margin-bottom: 100px;
 
-		&::before,
-		&::after {
-			width: 485px;
-			height: 485px;
-
-			border-radius: 485px;
-		}
-		&::before {
-			top: -20%;
-			left: -50%;
-		}
-		&::after {
-			right: -50%;
-			bottom: -20%;
-		}
+		background-image: url('/banner-cover_m.png');
+		background-position: center center;
+		background-size: cover;
 	}
 
-	&::before,
-	&::after {
-		position: absolute;
-		z-index: 1;
-
-		content: '';
-
-		opacity: 0.3;
-		background: radial-gradient(50% 50% at 50% 50%, #00ffff 0%, rgba(0, 255, 255, 0) 100%);
+	@media (min-width: 1400px) {
+		max-height: 800px;
 	}
-	.bg-img {
-		&.l01 {
-			top: 170px;
-			left: 50%;
-
-			transform: translateX(calc(-50% + -550px));
-		}
-		&.l02 {
-			top: 280px;
-			left: 50%;
-
-			transform: translateX(calc(-50% + -400px));
-		}
-		&.l03 {
-			top: 430px;
-			left: 50%;
-
-			transform: translateX(calc(-50% + -480px));
-		}
-		&.r01 {
-			top: 180px;
-			left: 50%;
-
-			transform: translateX(calc(-50% + 500px));
-		}
-		&.r02 {
-			top: 340px;
-			left: 50%;
-
-			transform: translateX(calc(-50% + 400px));
-		}
-		&.r03 {
-			top: 420px;
-			left: 50%;
-
-			transform: translateX(calc(-50% + 480px));
-		}
+	@media (min-width: 1600px) {
+		max-height: 900px;
 	}
-}
-.main-info,
-.main-cover {
-	img {
-		@include web() {
-			height: 100%;
-		}
-		@include phone() {
-			width: 100%;
-		}
+	@media (min-width: 1800px) {
+		max-height: 1000px;
 	}
-}
-.main-info {
-	z-index: 1000;
-
-	@include web() {
-		height: 45%;
-
-		transform: translateY(30px);
+	@media (min-width: 2000px) {
+		max-height: 1100px;
 	}
-	@include phone() {
-		width: 100vw;
-
-		transform: translateY(60px);
-	}
-}
-.main-cover {
-	@include web() {
-		height: 70%;
-
-		transform: translateY(-180px);
-	}
-	@include phone() {
-		width: 100vw;
-
-		transform: translateY(-40px);
+	@media (min-width: 2200px) {
+		max-height: 1200px;
 	}
 }
 .main-link {
@@ -174,7 +86,7 @@ const { t, locale } = useI18n()
 
 	height: 90px;
 
-	transform: translateY(-20px);
+	transform: translateY(60px);
 
 	button {
 		&::before {
