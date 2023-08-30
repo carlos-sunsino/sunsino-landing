@@ -4,7 +4,7 @@
     Banner
     Agenda
     Highlight
-    //- Speakers
+    Speakers
     Partnership
     ContactUs
     Footer
@@ -15,7 +15,7 @@ import { ref, computed, onMounted, reactive } from 'vue'
 import Banner from '@/components/banner.vue'
 import Agenda from '@/components/agenda.vue'
 import Highlight from '@/components/highlight.vue'
-// import Speakers from '@/components/speakers.vue'
+import Speakers from '@/components/speakers.vue'
 import Partnership from '@/components/partnership.vue'
 import ContactUs from '@/components/contactus.vue'
 import Footer from '@/components/footer.vue'

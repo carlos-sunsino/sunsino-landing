@@ -6,9 +6,9 @@ section#speakers
 	.aos(data-aos="zoom-in")
 		.speakers-group
 			//- TODO: 講者資訊
-			img.item(src="/speakers-card-cami.svg")
-			img.item(src="/speakers-card.svg")
-			img.item(src="/speakers-card.svg")
+			img.item(src="/speakers-card-cami.png")
+			img.item(src="/speakers-card-hank.png")
+			img.item(src="/speakers-card-steve.png")
 			img.item(src="/speakers-card.svg")
 </template>
 
