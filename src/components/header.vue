@@ -1,42 +1,35 @@
 <template lang="pug">
 #header
 	.logo(v-if="!open")
-		a(href="/")
+		a(:href="locale === ''?`/`:`/${locale}`")
 			img(src="/logo.svg")
 	.links.web
-		a(href="/#purpose-pos") {{ t('main.purpose') }}
-		a(href="/#timeline-pos") {{ t('main.timeline')}}
-		a(href="/#competition-pos") {{ t('main.competition')}}
-		a(href="/#reward-pos") {{ t('main.reward')}}
-		a(href="/#faq-pos") {{ t('main.faq')}}
+		a(:href="locale && `/${locale}#purpose-pos`") {{ t('main.purpose')}}
+		a(:href="locale && `/${locale}#timeline-pos`") {{ t('main.timeline')}}
+		a(:href="locale && `/${locale}#competition-pos`") {{ t('main.competition')}}
+		a(:href="locale && `/${locale}#reward-pos`") {{ t('main.reward')}}
+		a(:href="locale && `/${locale}#faq-pos`") {{ t('main.faq')}}
 	.functions
 		.dropdown(v-if="!open" @click="lang = !lang" :class="lang?'open':''") {{ t("locale.current") }}#[Icon(color="#fff" size="0.8em") #[CaretDownOutline]]
 			.dropdown-content
 				a(href="/zh-TW") {{ t("locale.zh") }}
 				a(href="/zh-CN") {{ t("locale.cn") }}
 				a(href="/en-US") {{ t("locale.en") }}
-		button.main.web(v-if="locale === 'zh-TW'" onclick=`location.href='/zh-TW/application/check'`) {{ t('header.apply_now') }}
-		button.main.web(v-if="locale === 'zh-CN'" onclick=`location.href='/zh-CN/application/check'`) {{ t('header.apply_now') }}
-		button.main.web(v-if="locale === 'en-US'" onclick=`location.href='/en-US/application/check'`) {{ t('header.apply_now') }}
+		button.main.web(:onclick="locale === ''?`location.href='/zh-TW/application/check'`:`location.href='/${locale}/application/check'`") {{ t('header.apply_now') }}
 		a.list.phone(v-if="!open" @click="open = !open")
 			img(src="/Header/Mobile/list.svg")
 		a.close.phone(v-if="open" @click="open = !open")
 			img(src="/Header/Mobile/close.svg")
 .board(:class="open?'open':''")
-	template(v-if="locale === 'zh-TW'")
-		img(src="/banner-info_zh.png")
-		button.main(onclick=`location.href='/zh-TW/application/check'`) {{ t('header.apply_now') }}
-	template(v-if="locale === 'zh-CN'")
-		img(src="/banner-info_cn.png")
-		button.main(onclick=`location.href='/zh-CN/application/check'`) {{ t('header.apply_now') }}
-	template(v-if="locale === 'en-US'")
-		img(src="/banner-info_en.png")
-		button.main(onclick=`location.href='/en-US/application/check'`) {{ t('header.apply_now') }}
-	a(href="/#purpose-pos" @click="open = !open") {{ t('main.purpose') }}
-	a(href="/#timeline-pos" @click="open = !open") {{ t('main.timeline')}}
-	a(href="/#competition-pos" @click="open = !open") {{ t('main.competition')}}
-	a(href="/#reward-pos" @click="open = !open") {{ t('main.reward')}}
-	a(href="/#faq-pos" @click="open = !open") {{ t('main.faq')}}
+	img(v-if="locale === 'zh-TW'" src="/banner-info_zh.png")
+	img(v-if="locale === 'zh-CN'" src="/banner-info_cn.png")
+	img(v-if="locale === 'en-US'" src="/banner-info_en.png")
+	button.main(:onclick="locale === ''?`location.href='/zh-TW/application/check'`:`location.href='/${locale}/application/check'`") {{ t('header.apply_now') }}
+	a(:href="locale && `/${locale}#purpose-pos`" @click="open = !open") {{ t('main.purpose')}}
+	a(:href="locale && `/${locale}#timeline-pos`" @click="open = !open") {{ t('main.timeline')}}
+	a(:href="locale && `/${locale}#competition-pos`" @click="open = !open") {{ t('main.competition')}}
+	a(:href="locale && `/${locale}#reward-pos`" @click="open = !open") {{ t('main.reward')}}
+	a(:href="locale && `/${locale}#faq-pos`" @click="open = !open") {{ t('main.faq')}}
 </template>
 
 <script setup>
